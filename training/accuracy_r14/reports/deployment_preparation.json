@@ -1,0 +1,14 @@
+{
+  "architecture_unchanged": true,
+  "rtl_byte_exact": true,
+  "clock_unchanged_mhz": 27,
+  "pin_constraints_unchanged": true,
+  "model_bytes": 159744,
+  "model_sha256": "ce27bf8fbc7e9db9faddf6cc9a8bafa9024a306fb8378681b3c4206afaae3ad6",
+  "model_crc32": "2a52a97d",
+  "model_cpu_words_verified": 39936,
+  "flash_written": false,
+  "board_updated": false,
+  "candidate": "F:\\\u8111\u673a\u9879\u76ee\\guanweixin_demo_v01\\submission\\\u89c2\u5fae\u82af_AI\u7cbe\u5ea6\u4f18\u5316_20261030_r14",
+  "pds_work": "F:\\FPGA_Work\\gwx_ai_r14"
+}

@@ -1,0 +1,147 @@
+{
+  "time": "2026-11-02T17:27:53.273675+08:00",
+  "revision": "r20_report_replay",
+  "physical_board_tested": true,
+  "program_mode": "SRAM",
+  "done_bit": 1,
+  "irq_startup_selftest_pass": true,
+  "boot_capture_selftest_pass": 33,
+  "debugger_data_channels": 180,
+  "all_cases_pass": true,
+  "cases": [
+    {
+      "case": "normal",
+      "physical_board_tested": true,
+      "website_capture_id": 37,
+      "board_record_id": 41,
+      "request_id": 1862286029,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 0,
+      "fault_codes": 0,
+      "faults": [],
+      "wdf": "evidence/r20_board_debug_evidence\\normal.wdf"
+    },
+    {
+      "case": "high",
+      "physical_board_tested": true,
+      "website_capture_id": 32,
+      "board_record_id": 36,
+      "request_id": 1246039617,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 32,
+      "fault_codes": 1024,
+      "faults": [
+        {
+          "channel": 5,
+          "code": "STUCK",
+          "index": 0,
+          "gap": 0
+        }
+      ],
+      "wdf": "evidence/r20_board_debug_evidence\\high.wdf"
+    },
+    {
+      "case": "low",
+      "physical_board_tested": true,
+      "website_capture_id": 33,
+      "board_record_id": 37,
+      "request_id": 4031028547,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 64,
+      "fault_codes": 4096,
+      "faults": [
+        {
+          "channel": 6,
+          "code": "STUCK",
+          "index": 0,
+          "gap": 0
+        }
+      ],
+      "wdf": "evidence/r20_board_debug_evidence\\low.wdf"
+    },
+    {
+      "case": "missing",
+      "physical_board_tested": true,
+      "website_capture_id": 34,
+      "board_record_id": 38,
+      "request_id": 3335852427,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 4,
+      "fault_codes": 32,
+      "faults": [
+        {
+          "channel": 2,
+          "code": "MISSING_PULSE",
+          "index": 32,
+          "gap": 16
+        }
+      ],
+      "wdf": "evidence/r20_board_debug_evidence\\missing.wdf"
+    },
+    {
+      "case": "period",
+      "physical_board_tested": true,
+      "website_capture_id": 35,
+      "board_record_id": 39,
+      "request_id": 1654269548,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 8,
+      "fault_codes": 192,
+      "faults": [
+        {
+          "channel": 3,
+          "code": "PERIOD",
+          "index": 24,
+          "gap": 12
+        }
+      ],
+      "wdf": "evidence/r20_board_debug_evidence\\period.wdf"
+    },
+    {
+      "case": "mixed",
+      "physical_board_tested": true,
+      "website_capture_id": 36,
+      "board_record_id": 40,
+      "request_id": 3161321549,
+      "sample_count": 64,
+      "all_64_samples_match": true,
+      "fault_mask": 15,
+      "fault_codes": 229,
+      "faults": [
+        {
+          "channel": 0,
+          "code": "STUCK",
+          "index": 0,
+          "gap": 0
+        },
+        {
+          "channel": 1,
+          "code": "STUCK",
+          "index": 0,
+          "gap": 0
+        },
+        {
+          "channel": 2,
+          "code": "MISSING_PULSE",
+          "index": 32,
+          "gap": 16
+        },
+        {
+          "channel": 3,
+          "code": "PERIOD",
+          "index": 24,
+          "gap": 12
+        }
+      ],
+      "wdf": "evidence/r20_board_debug_evidence\\mixed.wdf"
+    }
+  ],
+  "signal_semantics": "D0-D7 are FPGA replay of latest accepted 64-byte report; CPU trace is live",
+  "external_input_used": false,
+  "flash_programmed": false
+}

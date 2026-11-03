@@ -1,0 +1,10 @@
+{
+  "isa": "rv32i_zmmul_zicsr",
+  "firmware_bytes": 47564,
+  "coremark_flags": "-O2",
+  "application_flags": "-Os",
+  "hardware_multiplier": true,
+  "firmware_sha256": "9bbdf6799a4a5ebbfd0bb8c553ec25f2ccfd282c3c7061ab7ef9b44a950cf953",
+  "model_sha256": "ce27bf8fbc7e9db9faddf6cc9a8bafa9024a306fb8378681b3c4206afaae3ad6",
+  "algorithm_sources_unmodified": true
+}

@@ -1,0 +1,9 @@
+{
+  "bytes": 159744,
+  "banks": 2,
+  "bank_width": 36,
+  "bank_depth": 17750,
+  "expected_drm18_blocks": 70,
+  "all_word_addresses_verified": 39936,
+  "physical_implementation_verified": false
+}

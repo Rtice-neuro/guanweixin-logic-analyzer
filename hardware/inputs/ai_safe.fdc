@@ -1,0 +1,84 @@
+# Self-test top has no 40-pin external input; check board revision before use.
+define_attribute {p:uart_rx} {PAP_IO_LOC} {R8}
+define_attribute {p:uart_rx} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:uart_rx} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:uart_rx} {PAP_IO_VCCIO} {3.3}
+set_false_path -from [get_ports {uart_rx}]
+create_clock -name {sys_clk} -period 37.037037 -waveform {0 18.5185185} [get_ports {clk}]
+define_attribute {p:clk} {PAP_IO_LOC} {K21}
+define_attribute {p:clk} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:clk} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:clk} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:rst_n} {PAP_IO_LOC} {L15}
+define_attribute {p:rst_n} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:rst_n} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:rst_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:uart_tx} {PAP_IO_LOC} {R9}
+define_attribute {p:uart_tx} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:uart_tx} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:uart_tx} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:uart_tx} {PAP_IO_DRIVE} {4}
+define_attribute {p:uart_tx} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:led[0]} {PAP_IO_LOC} {B2}
+define_attribute {p:led[1]} {PAP_IO_LOC} {A2}
+define_attribute {p:led[2]} {PAP_IO_LOC} {B3}
+define_attribute {p:led[3]} {PAP_IO_LOC} {A3}
+define_attribute {p:led[0]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:led[1]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:led[2]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:led[3]} {PAP_IO_DIRECTION} {Output}
+define_attribute {p:led[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led[0]} {PAP_IO_DRIVE} {4}
+define_attribute {p:led[1]} {PAP_IO_DRIVE} {4}
+define_attribute {p:led[2]} {PAP_IO_DRIVE} {4}
+define_attribute {p:led[3]} {PAP_IO_DRIVE} {4}
+define_attribute {p:led[0]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:led[1]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:led[2]} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:led[3]} {PAP_IO_SLEW} {SLOW}
+set_false_path -from [get_ports {rst_n}]
+set_max_delay 37.037037 -to [get_ports {uart_tx led[0] led[1] led[2] led[3]}]
+set_min_delay 0 -to [get_ports {uart_tx led[0] led[1] led[2] led[3]}]
+
+
+# Input-only header; physical cable validation pending.
+define_attribute {p:signal_in[0]} {PAP_IO_LOC} {AB11}
+define_attribute {p:signal_in[1]} {PAP_IO_LOC} {Y11}
+define_attribute {p:signal_in[2]} {PAP_IO_LOC} {W11}
+define_attribute {p:signal_in[3]} {PAP_IO_LOC} {V11}
+define_attribute {p:signal_in[4]} {PAP_IO_LOC} {AB10}
+define_attribute {p:signal_in[5]} {PAP_IO_LOC} {AA10}
+define_attribute {p:signal_in[6]} {PAP_IO_LOC} {Y10}
+define_attribute {p:signal_in[7]} {PAP_IO_LOC} {W10}
+define_attribute {p:signal_in[0]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[1]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[2]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[3]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[4]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[5]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[6]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[7]} {PAP_IO_DIRECTION} {Input}
+define_attribute {p:signal_in[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[4]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[5]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[6]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[7]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:signal_in[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[5]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[6]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:signal_in[7]} {PAP_IO_VCCIO} {3.3}
+set_false_path -from [get_ports {signal_in[0] signal_in[1] signal_in[2] signal_in[3] signal_in[4] signal_in[5] signal_in[6] signal_in[7]}]

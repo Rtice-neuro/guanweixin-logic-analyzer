@@ -1,0 +1,24 @@
+{
+  "status": {
+    "latest": 88,
+    "count": 88,
+    "benchmark_latest": 6,
+    "benchmark_count": 6,
+    "port": "COM8",
+    "connected": true,
+    "ready": true,
+    "pending": false,
+    "error": "",
+    "ai_running": false,
+    "ai_elapsed_seconds": null,
+    "ai_result_id": null,
+    "external_enabled": false,
+    "phase": "\u5c31\u7eea",
+    "ai_count": 18,
+    "last_serial_clock_hz": 27000000
+  },
+  "service_pid": 39084,
+  "history_preserved": true,
+  "usb_driver_changed": false,
+  "computer_rebooted": false
+}

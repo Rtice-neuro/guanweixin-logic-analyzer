@@ -1,0 +1,27 @@
+{
+  "baseline_q4_anchors": {
+    "correct": 2,
+    "cases": 10,
+    "eos_correct": 10
+  },
+  "diagnostic_q4_validation": {
+    "correct": 550,
+    "cases": 550,
+    "eos_correct": 550
+  },
+  "diagnostic_q4_anchors": {
+    "correct": 10,
+    "cases": 10,
+    "eos_correct": 10
+  },
+  "diagnostic_q4_test": {
+    "correct": 549,
+    "cases": 550,
+    "eos_correct": 550
+  },
+  "diagnostic_q4_r13_test_regression": {
+    "correct": 549,
+    "cases": 550,
+    "eos_correct": 550
+  }
+}

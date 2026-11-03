@@ -1,0 +1,454 @@
+[
+  {
+    "board_id": 1,
+    "status": "PASS",
+    "source": "INJECTED",
+    "raw": "GWX DET8 v0.2\r\nID=00000001\r\nCLOCK_HZ=019BFCC0\r\nSOURCE=INJECTED\r\nINJECTION_ID=00000065\r\nTIMEBASE=VIRTUAL_SAMPLE_GRID\r\nSCENARIO=00000000\r\nINJECT_CHANNEL=00000000\r\nDIVIDER=0000010E\r\nTRIGGER_MASK=00000000\r\nTRIGGER_VALUE=00000000\r\nTRIGGER_MODE=00000000\r\nDATA=FFFF000000000000FFFF000000000000FFFF000000000000FFFF000000000000FFFF000000000000FFFF000000000000FFFF000000000000FFFF000000000000\r\nCOUNT=00000040\r\nSUM=00000FF0\r\nUART_SUM=00000FF0\r\nCAPTURE=PASS\r\nMONITOR_MASK=FF\r\nPERIOD_MIN=00000006\r\nPERIOD_MAX=0000000A\r\nMISSING_GAP=0000000E\r\nFAULT_COUNT=00000000\r\nCH00=NONE,FFFFFFFF,00000000\r\nCH01=NONE,FFFFFFFF,00000000\r\nCH02=NONE,FFFFFFFF,00000000\r\nCH03=NONE,FFFFFFFF,00000000\r\nCH04=NONE,FFFFFFFF,00000000\r\nCH05=NONE,FFFFFFFF,00000000\r\nCH06=NONE,FFFFFFFF,00000000\r\nCH07=NONE,FFFFFFFF,00000000\r\nANALYSIS_CYCLES=00001F52\r\nANALYSIS_RETIRED=00001A20\r\nANALYSIS_BRANCHES=00000680\r\nANALYSIS_DATA_STALLS=000000C0\r\nANALYSIS_FETCH_STALLS=00000317\r\nANALYSIS_FORWARD_EVENTS=00001095\r\nANALYSIS_FLUSH_EVENTS=0000011D\r\nCPU_OPTIONS=00000003\r\nTRACE_COUNT=00000010\r\nTRACE=00005330,32A7A023,00000000,00000000\r\nTRACE=00005334,3107A783,0004321D,0000001F\r\nTRACE=00005338,1000CBB7,1000C000,0000002F\r\nTRACE=0000533C,7FCB8493,1000C7FC,00000013\r\nTRACE=00005340,00F12623,00000000,00000018\r\nTRACE=00005344,400007B7,40000000,0000001F\r\nTRACE=00005348,3007A783,0001E4B0,0000001F\r\nTRACE=0000534C,00070413,00000001,00000011\r\nTRACE=00005350,FFF00E93,FFFFFFFF,0000003B\r\nTRACE=00005354,00F12823,00000000,00000020\r\nTRACE=00005358,400007B7,40000000,0000001F\r\nTRACE=0000535C,3147A783,00007410,0000001F\r\nTRACE=00005360,00000713,00000000,0000001D\r\nTRACE=00005364,00300913,00000003,00000025\r\nTRACE=00005368,00F12A23,00000000,00000028\r\nTRACE=0000536C,400007B7,40000000,0000001F\r\nEND\r\n",
+    "faults": [],
+    "samples": [
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      255,
+      255,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "trace": [
+      {
+        "pc": 21296,
+        "instruction": 849846307,
+        "data": 0,
+        "write": false,
+        "rd": 0
+      },
+      {
+        "pc": 21300,
+        "instruction": 822585219,
+        "data": 274973,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21304,
+        "instruction": 268487607,
+        "data": 268484608,
+        "write": true,
+        "rd": 23
+      },
+      {
+        "pc": 21308,
+        "instruction": 2144044179,
+        "data": 268486652,
+        "write": true,
+        "rd": 9
+      },
+      {
+        "pc": 21312,
+        "instruction": 15803939,
+        "data": 0,
+        "write": false,
+        "rd": 12
+      },
+      {
+        "pc": 21316,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21320,
+        "instruction": 805808003,
+        "data": 124080,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21324,
+        "instruction": 459795,
+        "data": 1,
+        "write": true,
+        "rd": 8
+      },
+      {
+        "pc": 21328,
+        "instruction": 4293922451,
+        "data": 4294967295,
+        "write": true,
+        "rd": 29
+      },
+      {
+        "pc": 21332,
+        "instruction": 15804451,
+        "data": 0,
+        "write": false,
+        "rd": 16
+      },
+      {
+        "pc": 21336,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21340,
+        "instruction": 826779523,
+        "data": 29712,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21344,
+        "instruction": 1811,
+        "data": 0,
+        "write": true,
+        "rd": 14
+      },
+      {
+        "pc": 21348,
+        "instruction": 3148051,
+        "data": 3,
+        "write": true,
+        "rd": 18
+      },
+      {
+        "pc": 21352,
+        "instruction": 15804963,
+        "data": 0,
+        "write": false,
+        "rd": 20
+      },
+      {
+        "pc": 21356,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      }
+    ],
+    "clock_hz": 27000000,
+    "injection_id": 101,
+    "timebase_kind": "VIRTUAL_SAMPLE_GRID",
+    "config": {
+      "cmd": 2,
+      "divider": 270,
+      "mask": 0,
+      "value": 0,
+      "trigger": 0,
+      "monitor": 255,
+      "pmin": 6,
+      "pmax": 10,
+      "missing": 14,
+      "mode": 0,
+      "channel": 0
+    },
+    "input_kind": "UART_INJECTION",
+    "analysis": {
+      "cycles": 8018,
+      "retired": 6688,
+      "branches": 1664,
+      "data_stalls": 192,
+      "fetch_stalls": 791,
+      "forward_events": 4245,
+      "flush_events": 285
+    },
+    "cpu_options": 3
+  },
+  {
+    "board_id": 2,
+    "status": "PASS",
+    "source": "INJECTED",
+    "raw": "GWX DET8 v0.2\r\nID=00000002\r\nCLOCK_HZ=019BFCC0\r\nSOURCE=INJECTED\r\nINJECTION_ID=00000066\r\nTIMEBASE=VIRTUAL_SAMPLE_GRID\r\nSCENARIO=00000000\r\nINJECT_CHANNEL=00000000\r\nDIVIDER=0000010E\r\nTRIGGER_MASK=00000000\r\nTRIGGER_VALUE=00000000\r\nTRIGGER_MODE=00000000\r\nDATA=F7F7000000000000F7F7000000000000F7F7000000000000D7D7000000000000F7F7000000000000F7F7000000000000F7F7000000000000F7F7000000000000\r\nCOUNT=00000040\r\nSUM=00000F30\r\nUART_SUM=00000F30\r\nCAPTURE=PASS\r\nMONITOR_MASK=FF\r\nPERIOD_MIN=00000006\r\nPERIOD_MAX=0000000A\r\nMISSING_GAP=0000000E\r\nFAULT_COUNT=00000002\r\nCH00=NONE,FFFFFFFF,00000000\r\nCH01=NONE,FFFFFFFF,00000000\r\nCH02=NONE,FFFFFFFF,00000000\r\nCH03=STUCK,00000000,00000000\r\nCH04=NONE,FFFFFFFF,00000000\r\nCH05=MISSING_PULSE,00000018,00000010\r\nCH06=NONE,FFFFFFFF,00000000\r\nCH07=NONE,FFFFFFFF,00000000\r\nANALYSIS_CYCLES=00001DB4\r\nANALYSIS_RETIRED=000019CC\r\nANALYSIS_BRANCHES=00000662\r\nANALYSIS_DATA_STALLS=00000096\r\nANALYSIS_FETCH_STALLS=00000202\r\nANALYSIS_FORWARD_EVENTS=0000107D\r\nANALYSIS_FLUSH_EVENTS=000000FC\r\nCPU_OPTIONS=00000003\r\nTRACE_COUNT=00000010\r\nTRACE=00005330,32A7A023,00000000,00000000\r\nTRACE=00005334,3107A783,0009AB22,0000001F\r\nTRACE=00005338,1000CBB7,1000C000,0000002F\r\nTRACE=0000533C,7FCB8493,1000C7FC,00000013\r\nTRACE=00005340,00F12623,00000000,00000018\r\nTRACE=00005344,400007B7,40000000,0000001F\r\nTRACE=00005348,3007A783,00042107,0000001F\r\nTRACE=0000534C,00070413,00000001,00000011\r\nTRACE=00005350,FFF00E93,FFFFFFFF,0000003B\r\nTRACE=00005354,00F12823,00000000,00000020\r\nTRACE=00005358,400007B7,40000000,0000001F\r\nTRACE=0000535C,3147A783,0000F307,0000001F\r\nTRACE=00005360,00000713,00000000,0000001D\r\nTRACE=00005364,00300913,00000003,00000025\r\nTRACE=00005368,00F12A23,00000000,00000028\r\nTRACE=0000536C,400007B7,40000000,0000001F\r\nEND\r\n",
+    "faults": [
+      {
+        "channel": 3,
+        "code": "STUCK",
+        "index": 0,
+        "gap": 0
+      },
+      {
+        "channel": 5,
+        "code": "MISSING_PULSE",
+        "index": 24,
+        "gap": 16
+      }
+    ],
+    "samples": [
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      215,
+      215,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      247,
+      247,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "trace": [
+      {
+        "pc": 21296,
+        "instruction": 849846307,
+        "data": 0,
+        "write": false,
+        "rd": 0
+      },
+      {
+        "pc": 21300,
+        "instruction": 822585219,
+        "data": 633634,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21304,
+        "instruction": 268487607,
+        "data": 268484608,
+        "write": true,
+        "rd": 23
+      },
+      {
+        "pc": 21308,
+        "instruction": 2144044179,
+        "data": 268486652,
+        "write": true,
+        "rd": 9
+      },
+      {
+        "pc": 21312,
+        "instruction": 15803939,
+        "data": 0,
+        "write": false,
+        "rd": 12
+      },
+      {
+        "pc": 21316,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21320,
+        "instruction": 805808003,
+        "data": 270599,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21324,
+        "instruction": 459795,
+        "data": 1,
+        "write": true,
+        "rd": 8
+      },
+      {
+        "pc": 21328,
+        "instruction": 4293922451,
+        "data": 4294967295,
+        "write": true,
+        "rd": 29
+      },
+      {
+        "pc": 21332,
+        "instruction": 15804451,
+        "data": 0,
+        "write": false,
+        "rd": 16
+      },
+      {
+        "pc": 21336,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21340,
+        "instruction": 826779523,
+        "data": 62215,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 21344,
+        "instruction": 1811,
+        "data": 0,
+        "write": true,
+        "rd": 14
+      },
+      {
+        "pc": 21348,
+        "instruction": 3148051,
+        "data": 3,
+        "write": true,
+        "rd": 18
+      },
+      {
+        "pc": 21352,
+        "instruction": 15804963,
+        "data": 0,
+        "write": false,
+        "rd": 20
+      },
+      {
+        "pc": 21356,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      }
+    ],
+    "clock_hz": 27000000,
+    "injection_id": 102,
+    "timebase_kind": "VIRTUAL_SAMPLE_GRID",
+    "config": {
+      "cmd": 2,
+      "divider": 270,
+      "mask": 0,
+      "value": 0,
+      "trigger": 0,
+      "monitor": 255,
+      "pmin": 6,
+      "pmax": 10,
+      "missing": 14,
+      "mode": 0,
+      "channel": 0
+    },
+    "input_kind": "UART_INJECTION",
+    "analysis": {
+      "cycles": 7604,
+      "retired": 6604,
+      "branches": 1634,
+      "data_stalls": 150,
+      "fetch_stalls": 514,
+      "forward_events": 4221,
+      "flush_events": 252
+    },
+    "cpu_options": 3
+  },
+  {
+    "board_id": 3,
+    "status": "CONFIG_ERROR",
+    "source": "UNKNOWN",
+    "raw": "GWX DET8 v0.2\r\nID=00000003\r\nCLOCK_HZ=019BFCC0\r\nCAPTURE=CONFIG_ERROR\r\nERROR=BAD_PACKET\r\nEND\r\n",
+    "faults": [],
+    "samples": [],
+    "trace": [],
+    "clock_hz": 27000000,
+    "error": "BAD_PACKET"
+  }
+]

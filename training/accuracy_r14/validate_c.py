@@ -1,0 +1,6 @@
+from pathlib import Path
+import subprocess,csv,json,sys
+sys.stdout.reconfigure(encoding='utf-8');R=Path('F:/脑机项目/guanweixin_demo_v01/development/ai_accuracy_20261030_r14');lp='/mnt/f/脑机项目/guanweixin_demo_v01/development/ai_accuracy_20261030_r14';results={}
+for model,split in [('baseline_q4','anchors'),('diagnostic_q4','validation'),('diagnostic_q4','anchors'),('diagnostic_q4','test'),('diagnostic_q4','r13_test_regression')]:
+ name=f'{model}_{split}';p=subprocess.run(['wsl','-d','Ubuntu','--cd',lp,'--exec','host/probe_q4','artifacts/'+model+'.bin','data/'+split+'_probe.txt','reports/'+name+'.csv'],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=300);(R/'reports'/f'{name}.log').write_bytes(p.stdout);assert p.returncode==0,(name,p.stdout);rows=list(csv.DictReader((R/'reports'/f'{name}.csv').open(encoding='utf-8')));results[name]=dict(correct=sum(x['expected_token']==x['predicted_token']for x in rows),cases=len(rows),eos_correct=sum(x['eos_token']=='2'for x in rows));print(name,results[name],flush=True)
+(R/'reports/c_validation.json').write_text(json.dumps(results,indent=2),encoding='utf-8');assert results['diagnostic_q4_anchors']['correct']==10;assert results['diagnostic_q4_validation']['correct']>=548

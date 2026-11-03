@@ -1,0 +1,19 @@
+{
+  "LUT": 15295.0,
+  "LUT_available": 42800.0,
+  "FF": 12133.0,
+  "FF_available": 64200.0,
+  "DRM": 128.5,
+  "DRM_available": 134.0,
+  "APM": 8.0,
+  "APM_available": 84.0,
+  "nominal_clock_mhz": 27,
+  "static_estimated_max_mhz": 38.638,
+  "all_constraints_met": true,
+  "slow_setup_slack_ns": 11.156,
+  "slow_hold_slack_ns": 0.012,
+  "fast_setup_slack_ns": 18.842,
+  "fast_hold_slack_ns": 0.012,
+  "clock_independently_calibrated": false,
+  "coremark_per_lut_whole_design": 0.004665932621530283
+}

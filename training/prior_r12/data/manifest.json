@@ -1,0 +1,44 @@
+{
+  "provenance": "SYNTHETIC_ONLY",
+  "real_external_training": false,
+  "split_policy": "Disjoint nominal-period groups and independent seeds; periodic captures only.",
+  "label_source": "Generator event, not production rule output",
+  "no_model_inputs": [
+    "scenario",
+    "injected_channel",
+    "rule_faults",
+    "filename",
+    "label"
+  ],
+  "splits": {
+    "train": {
+      "rows": 3600,
+      "periods": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "seed": 28001,
+      "sha256": "9fca7ab66ba8ee6a185c8c0bd8476ec265119e573a21d80c458f71c1906c08c4"
+    },
+    "validation": {
+      "rows": 720,
+      "periods": [
+        7,
+        11
+      ],
+      "seed": 28002,
+      "sha256": "80855fc6a51864d33da9b7fc1c6ab455ecabb4d4a5c7fd5f7b8012d1a31f96d6"
+    },
+    "test": {
+      "rows": 720,
+      "periods": [
+        9,
+        13
+      ],
+      "seed": 28003,
+      "sha256": "6636d3b5805cf58d53f0be3293624537b5cbe8b64b69f04c77bf534d4aef159e"
+    }
+  }
+}

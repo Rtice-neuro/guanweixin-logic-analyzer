@@ -1,0 +1,6582 @@
+{
+  "cases": 240,
+  "all_bit_exact": true,
+  "native_host_reference_only": true,
+  "cycle_accurate": false,
+  "physical_hardware_tested": false,
+  "source": "independently_generated_synthetic_not_external_measurements",
+  "training_disjointness_proven": false,
+  "labels": [
+    "normal",
+    "missing",
+    "period",
+    "stuck_high",
+    "stuck_low"
+  ],
+  "confusion_matrix": [
+    [
+      42,
+      0,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      39,
+      9,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      20,
+      0,
+      0,
+      28
+    ],
+    [
+      0,
+      0,
+      0,
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      48,
+      0
+    ]
+  ],
+  "ai_accuracy": 0.8208333333333333,
+  "rule_confusion_matrix": [
+    [
+      48,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      48,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      48,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      48,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      48
+    ]
+  ],
+  "rule_accuracy": 1.0,
+  "score_is_calibrated_probability": false,
+  "model_sha256": "238d90734ba1775124a5f0c5a37eb02b1cb02a8ceefcd4df58e6e3ef06fbf448",
+  "seconds": 3.263997508000017,
+  "checks": [
+    {
+      "case": 0,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 0,
+      "prompt": "h32 e32 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "ac537c3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "ac537c3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 1,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 0,
+      "prompt": "h30 e30 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 2,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 0,
+      "prompt": "h21 e21 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 3,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 4,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 5,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 0,
+      "prompt": "h25 e25 g16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "5c367c3f",
+        204544
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "5c367c3f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 6,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 0,
+      "prompt": "h24 e23 g16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        191488
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 7,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 0,
+      "prompt": "h18 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "dcc37f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "dcc37f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 8,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 9,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 10,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 0,
+      "prompt": "h33 e21 g16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "276e673f",
+        191488
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "276e673f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 11,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 0,
+      "prompt": "h30 e19 g16,16,16,32,16,16,16,16\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "c4942d3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "c4942d3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 12,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 0,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 13,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 14,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 15,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 0,
+      "prompt": "h32 e16 g16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 16,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 0,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 17,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 0,
+      "prompt": "h28 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 18,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 19,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 20,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 0,
+      "prompt": "h33 e13 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "4d657c3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "4d657c3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 21,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 0,
+      "prompt": "h28 e11 g16,16,32,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "b2987a3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "b2987a3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 22,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 0,
+      "prompt": "h24 e10 g21,21,21,21\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "dbc01e3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "dbc01e3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 23,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 24,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 25,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 0,
+      "prompt": "h32 e11 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "2951713f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "2951713f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 26,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 0,
+      "prompt": "h28 e8 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "3fc07c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "3fc07c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 27,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 0,
+      "prompt": "h24 e8 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 28,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 29,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 30,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 0,
+      "prompt": "h32 e8 g16,16,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 31,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 0,
+      "prompt": "h24 e5 g32\nanswer:",
+      "prompt_tokens": 15,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        69632
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        62464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 32,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 0,
+      "prompt": "h25 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 33,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 0,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 34,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 0,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 35,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 1,
+      "prompt": "h32 e31 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 36,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 1,
+      "prompt": "h30 e29 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3033223f",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3033223f",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 37,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 1,
+      "prompt": "h21 e21 g24,24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "6fd47f3f",
+        191488
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "6fd47f3f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 38,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 39,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 40,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 1,
+      "prompt": "h26 e25 g16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        204544
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 41,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 1,
+      "prompt": "h24 e23 g16,16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "7730583f",
+        204544
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "7730583f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 42,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 1,
+      "prompt": "h19 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 43,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 44,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 45,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 1,
+      "prompt": "h32 e21 g16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "4eb7763f",
+        178432
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "4eb7763f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 46,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 1,
+      "prompt": "h29 e19 g16,16,16,16,32,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "ecc46a3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "ecc46a3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 47,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 1,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 48,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 49,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 50,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 1,
+      "prompt": "h32 e16 g16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 51,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 1,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 52,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 1,
+      "prompt": "h28 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 53,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 54,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 55,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 1,
+      "prompt": "h31 e13 g16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "513e7e3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "513e7e3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 56,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 1,
+      "prompt": "h29 e10 g16,32,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "76747b3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "76747b3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 57,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 1,
+      "prompt": "h25 e10 g21,21,21,21\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "9bb72c3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "9bb72c3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 58,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 59,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 60,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 1,
+      "prompt": "h34 e10 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 61,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 1,
+      "prompt": "h25 e9 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "fcb47c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "fcb47c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 62,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 1,
+      "prompt": "h24 e8 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 63,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 64,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 65,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 1,
+      "prompt": "h32 e8 g16,16,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 66,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 1,
+      "prompt": "h24 e6 g32,16\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1221663f",
+        82688
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1221663f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 67,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 1,
+      "prompt": "h25 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 68,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 1,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 69,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 1,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 70,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 2,
+      "prompt": "h32 e31 g16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "325b7e3f",
+        243712
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "325b7e3f",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 71,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 2,
+      "prompt": "h30 e29 g16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 52,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "fbc9133f",
+        230656
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "fbc9133f",
+        204544
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 72,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 2,
+      "prompt": "h21 e21 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 73,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 74,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 75,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 2,
+      "prompt": "h26 e25 g16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        204544
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 76,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 2,
+      "prompt": "h24 e23 g16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        191488
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 77,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 2,
+      "prompt": "h19 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 78,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 79,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 80,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 2,
+      "prompt": "h31 e21 g16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "f3ab7b3f",
+        191488
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "f3ab7b3f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 81,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 2,
+      "prompt": "h29 e19 g16,16,16,16,32,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "ecc46a3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "ecc46a3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 82,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 2,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 83,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 84,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 85,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 2,
+      "prompt": "h32 e16 g16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 86,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 2,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 87,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 2,
+      "prompt": "h24 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 88,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 89,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 90,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 2,
+      "prompt": "h34 e12 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 91,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 2,
+      "prompt": "h25 e10 g16,32,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "3d207c3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "3d207c3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 92,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 2,
+      "prompt": "h25 e10 g21,21,21,21\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "9bb72c3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "9bb72c3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 93,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 94,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 95,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 2,
+      "prompt": "h31 e11 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "23bd7d3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "23bd7d3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 96,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 2,
+      "prompt": "h28 e8 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "3fc07c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "3fc07c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 97,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 2,
+      "prompt": "h24 e8 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 98,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 99,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 100,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 2,
+      "prompt": "h32 e8 g16,16,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 101,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 2,
+      "prompt": "h24 e5 g32\nanswer:",
+      "prompt_tokens": 15,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        69632
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        62464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 102,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 2,
+      "prompt": "h25 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 103,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 2,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 104,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 2,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 105,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 3,
+      "prompt": "h32 e31 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 106,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 3,
+      "prompt": "h30 e30 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 107,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 3,
+      "prompt": "h20 e20 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 108,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 109,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 110,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 3,
+      "prompt": "h26 e26 g16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 49,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "50a27e3f",
+        217600
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "50a27e3f",
+        193024
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 111,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 3,
+      "prompt": "h24 e23 g16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        191488
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 112,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 3,
+      "prompt": "h19 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 113,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 114,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 115,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 3,
+      "prompt": "h31 e21 g16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "c2a9773f",
+        178432
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "c2a9773f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 116,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 3,
+      "prompt": "h28 e19 g16,16,16,32,16,16,16,16\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "8086743f",
+        165376
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "8086743f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 117,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 3,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 118,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 119,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 120,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 3,
+      "prompt": "h32 e15 g16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "cc107b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "cc107b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 121,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 3,
+      "prompt": "h28 e13 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "953f7c3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "953f7c3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 122,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 3,
+      "prompt": "h28 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 123,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 124,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 125,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 3,
+      "prompt": "h31 e13 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "b4a97e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "b4a97e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 126,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 3,
+      "prompt": "h27 e11 g16,16,32,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "4e3e7b3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "4e3e7b3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 127,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 3,
+      "prompt": "h25 e9 g21,21,21,21\nanswer:",
+      "prompt_tokens": 24,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "228f293f",
+        108800
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "228f293f",
+        97024
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 128,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 129,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 130,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 3,
+      "prompt": "h34 e10 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 131,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 3,
+      "prompt": "h26 e9 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "68ca7d3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "68ca7d3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 132,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 3,
+      "prompt": "h24 e8 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 133,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 134,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 135,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 3,
+      "prompt": "h32 e8 g16,16,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 136,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 3,
+      "prompt": "h24 e6 g32,16\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1221663f",
+        82688
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1221663f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 137,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 3,
+      "prompt": "h24 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "ac827c3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "ac827c3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 138,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 3,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 139,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 3,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 140,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 4,
+      "prompt": "h32 e32 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "ac537c3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "ac537c3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 141,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 4,
+      "prompt": "h30 e30 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 142,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 4,
+      "prompt": "h20 e20 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 143,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 144,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 145,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 4,
+      "prompt": "h26 e26 g16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 49,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "50a27e3f",
+        217600
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "50a27e3f",
+        193024
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 146,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 5,
+      "channel": 4,
+      "prompt": "h23 e23 g16,16,16,16,32,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "8ceb093f",
+        204544
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "8ceb093f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 147,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 4,
+      "prompt": "h19 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 148,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 149,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 150,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 4,
+      "prompt": "h32 e21 g16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "0bd97a3f",
+        191488
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "0bd97a3f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 151,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 4,
+      "prompt": "h28 e19 g16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "93ce743f",
+        178432
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "93ce743f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 152,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 4,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 153,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 154,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 155,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 4,
+      "prompt": "h32 e16 g16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 156,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 4,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 157,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 4,
+      "prompt": "h24 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 158,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 159,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 160,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 4,
+      "prompt": "h34 e12 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 161,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 4,
+      "prompt": "h29 e10 g16,32,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "76747b3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "76747b3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 162,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 4,
+      "prompt": "h24 e9 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "14696c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "14696c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 163,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 164,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 165,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 4,
+      "prompt": "h31 e11 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "23bd7d3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "23bd7d3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 166,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 4,
+      "prompt": "h25 e9 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "fcb47c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "fcb47c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 167,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 4,
+      "prompt": "h24 e8 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "cf1d623f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 168,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 169,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 170,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 4,
+      "prompt": "h32 e7 g16,16\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "be6a0e3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "be6a0e3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 171,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 4,
+      "prompt": "h24 e5 g32\nanswer:",
+      "prompt_tokens": 15,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        69632
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "083d173f",
+        62464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 172,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 4,
+      "prompt": "h24 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "ac827c3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "ac827c3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 173,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 4,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 174,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 4,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 175,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 5,
+      "prompt": "h32 e31 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 176,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 5,
+      "prompt": "h30 e29 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3033223f",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3033223f",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 177,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 5,
+      "prompt": "h20 e20 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "76b47f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 178,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 179,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 180,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 5,
+      "prompt": "h25 e25 g16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 49,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "1f487e3f",
+        217600
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "1f487e3f",
+        193024
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 181,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 5,
+      "prompt": "h24 e23 g16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        191488
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "1f42163f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 182,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 5,
+      "prompt": "h19 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "64bc7f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 183,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 184,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 185,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 5,
+      "prompt": "h31 e21 g16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 43,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "f3ab7b3f",
+        191488
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "f3ab7b3f",
+        169984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 186,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 6,
+      "channel": 5,
+      "prompt": "h30 e19 g16,16,16,16,32,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "4e86ff3e",
+        178432
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "4e86ff3e",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 187,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 5,
+      "prompt": "h24 e16 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "3ed6793f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 188,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 189,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 190,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 5,
+      "prompt": "h32 e16 g16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "db887c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 191,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 5,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 192,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 5,
+      "prompt": "h24 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "85d36c3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 193,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 194,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 195,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 5,
+      "prompt": "h34 e12 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 196,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 5,
+      "prompt": "h28 e11 g16,32,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "98ca7b3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "98ca7b3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 197,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 5,
+      "prompt": "h24 e9 g21,21,21,21\nanswer:",
+      "prompt_tokens": 24,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "77a8123f",
+        108800
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "77a8123f",
+        97024
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 198,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 199,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 200,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 5,
+      "prompt": "h34 e10 g16,16,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        113152
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "0679793f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 201,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 5,
+      "prompt": "h24 e8 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "21c97c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "21c97c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 202,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 5,
+      "prompt": "h24 e7 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "8bc6603f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "8bc6603f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 203,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 204,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 205,
+      "expected": 0,
+      "predicted": 2,
+      "rule": 0,
+      "period": 16,
+      "channel": 5,
+      "prompt": "h32 e8 g16,16,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "1269133f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 206,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 16,
+      "channel": 5,
+      "prompt": "h24 e5 g32,16\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "5564673f",
+        82688
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "5564673f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 207,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 16,
+      "channel": 5,
+      "prompt": "h25 e6 g21,21\nanswer:",
+      "prompt_tokens": 18,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        82688
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "394c7d3f",
+        73984
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 208,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 16,
+      "channel": 5,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 209,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 16,
+      "channel": 5,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 210,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 4,
+      "channel": 6,
+      "prompt": "h32 e31 g16,16,16,16,16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 58,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        256768
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "69977d3f",
+        227584
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 211,
+      "expected": 1,
+      "predicted": 2,
+      "rule": 1,
+      "period": 4,
+      "channel": 6,
+      "prompt": "h30 e30 g16,16,16,16,16,16,32,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 55,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        243712
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "3d05f23e",
+        216064
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 212,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 4,
+      "channel": 6,
+      "prompt": "h21 e21 g24,24,24,24,24,24,24,24,24\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        178432
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "86847f3f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 213,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 4,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 214,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 4,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 215,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 5,
+      "channel": 6,
+      "prompt": "h26 e25 g16,16,16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        204544
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "bf1a7d3f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 216,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 5,
+      "channel": 6,
+      "prompt": "h24 e24 g16,16,16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 46,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "c143483f",
+        204544
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "c143483f",
+        181504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 217,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 5,
+      "channel": 6,
+      "prompt": "h18 e18 g22,22,22,22,22,22,22,22\nanswer:",
+      "prompt_tokens": 37,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "dcc37f3f",
+        165376
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "dcc37f3f",
+        146944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 218,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 5,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 219,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 5,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 220,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 6,
+      "channel": 6,
+      "prompt": "h33 e21 g16,16,16,16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "0ae7463f",
+        178432
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "0ae7463f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 221,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 6,
+      "channel": 6,
+      "prompt": "h28 e19 g16,16,16,32,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 40,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "93ce743f",
+        178432
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "93ce743f",
+        158464
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 222,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 6,
+      "channel": 6,
+      "prompt": "h24 e15 g21,21,21,21,21,21,21\nanswer:",
+      "prompt_tokens": 34,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "19667c3f",
+        152320
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "19667c3f",
+        135424
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 223,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 6,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 224,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 6,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 225,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 8,
+      "channel": 6,
+      "prompt": "h32 e15 g16,16,16,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "cc107b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "cc107b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 226,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 8,
+      "channel": 6,
+      "prompt": "h28 e14 g16,16,32,16,16,16\nanswer:",
+      "prompt_tokens": 31,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        139264
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "07d17b3f",
+        123904
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 227,
+      "expected": 2,
+      "predicted": 5,
+      "rule": 2,
+      "period": 8,
+      "channel": 6,
+      "prompt": "h28 e12 g20,20,20,20,20\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        453,
+        2,
+        5,
+        "c77b6e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 228,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 8,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 229,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 8,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 230,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 10,
+      "channel": 6,
+      "prompt": "h34 e12 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "2cb6423f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 231,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 10,
+      "channel": 6,
+      "prompt": "h26 e11 g16,32,16,16\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "752e7c3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "752e7c3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 232,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 10,
+      "channel": 6,
+      "prompt": "h24 e10 g21,21,21,21\nanswer:",
+      "prompt_tokens": 25,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "dbc01e3f",
+        113152
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "dbc01e3f",
+        100864
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 233,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 10,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 234,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 10,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 235,
+      "expected": 0,
+      "predicted": 0,
+      "rule": 0,
+      "period": 12,
+      "channel": 6,
+      "prompt": "h33 e11 g16,16,16,16,16\nanswer:",
+      "prompt_tokens": 28,
+      "baseline": [
+        0,
+        447,
+        2,
+        0,
+        "97247e3f",
+        126208
+      ],
+      "optimized": [
+        0,
+        447,
+        2,
+        0,
+        "97247e3f",
+        112384
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 236,
+      "expected": 1,
+      "predicted": 1,
+      "rule": 1,
+      "period": 12,
+      "channel": 6,
+      "prompt": "h24 e8 g16,32,16\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        445,
+        2,
+        1,
+        "21c97c3f",
+        95744
+      ],
+      "optimized": [
+        0,
+        445,
+        2,
+        1,
+        "21c97c3f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 237,
+      "expected": 2,
+      "predicted": 2,
+      "rule": 2,
+      "period": 12,
+      "channel": 6,
+      "prompt": "h24 e7 g21,21,21\nanswer:",
+      "prompt_tokens": 21,
+      "baseline": [
+        0,
+        457,
+        2,
+        2,
+        "8bc6603f",
+        95744
+      ],
+      "optimized": [
+        0,
+        457,
+        2,
+        2,
+        "8bc6603f",
+        85504
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 238,
+      "expected": 3,
+      "predicted": 3,
+      "rule": 3,
+      "period": 12,
+      "channel": 6,
+      "prompt": "h64 e0 g\nanswer:",
+      "prompt_tokens": 13,
+      "baseline": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        60928
+      ],
+      "optimized": [
+        0,
+        455,
+        2,
+        3,
+        "b2aa7f3f",
+        54784
+      ],
+      "bit_exact": true
+    },
+    {
+      "case": 239,
+      "expected": 4,
+      "predicted": 4,
+      "rule": 4,
+      "period": 12,
+      "channel": 6,
+      "prompt": "h0 e0 g\nanswer:",
+      "prompt_tokens": 12,
+      "baseline": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        56576
+      ],
+      "optimized": [
+        0,
+        459,
+        2,
+        4,
+        "b5b2663f",
+        50944
+      ],
+      "bit_exact": true
+    }
+  ]
+}

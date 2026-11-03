@@ -1,0 +1,16 @@
+{
+  "source": "User previously downloaded files; no additional model download",
+  "repository": "https://github.com/karpathy/llama2.c",
+  "weights": "https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K",
+  "license": "MIT",
+  "safety": "Read .bin as bounded numeric arrays; no external pickle/torch.load and no upstream training shell scripts",
+  "files": {
+    "pretrained\\stories260K.bin": "b0a507e7ad0f626624f17112325e66691f9076d622e1d3274d103d00299f2696",
+    "pretrained\\tok512.bin": "037cb335abb25d1fa9e8ecae30ed2a3a8ace9302862ebcdc05d51a6bbb10c312",
+    "third_party\\LICENSE": "e87b912002f04cdfa837eaf7f70548ab79b9cb62a285495edf575f3da875aec4",
+    "third_party\\model.py": "54f35dbd347100c0066da93dfdf9f19c2ec1e8758bfffcedbdfdb09d5c343e1f",
+    "third_party\\run.c": "9c4f2d5c6ae01b71726d1cc37530d71e60bff0ec7cc012565f16a43c1ca658bd",
+    "third_party\\runq.c": "ba9cc681afca79f994f815dfeffc4a61c5b3ca8c5d4d4dcb75c8d375856ba548",
+    "third_party\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

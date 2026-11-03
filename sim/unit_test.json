@@ -1,0 +1,10 @@
+{
+  "scope": "RTL serial-report observer and replay, not hardware or full-CPU benchmark",
+  "scenarios": 33,
+  "frames_checked": 34,
+  "replays_per_frame": 2,
+  "samples_per_replay": 64,
+  "malformed_and_reset_recovery": true,
+  "passed": true,
+  "vcd": "debug_replay_r20.vcd"
+}

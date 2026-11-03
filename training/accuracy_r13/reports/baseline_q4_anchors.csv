@@ -1,0 +1,3 @@
+id,expected_token,predicted_token,eos_token,label,score,groups,host_ms
+anchor-STUCK_HIGH,455,455,2,3,0.998698354,54784,3.193000
+anchor-STUCK_LOW,459,459,2,4,0.901164353,50944,2.815000

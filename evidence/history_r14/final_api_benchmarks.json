@@ -1,0 +1,222 @@
+[
+  {
+    "id": 11,
+    "received_at": "2026-10-30T18:12:30.386+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 10,
+    "received_at": "2026-10-30T18:08:27.854+08:00",
+    "mode": 1,
+    "clock_hz": 27000000,
+    "ticks": 417190970,
+    "seconds": 15.451517407407408,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "18f2",
+      "crclist": "e3c1",
+      "crcmatrix": "0747",
+      "crcstate": "8d84"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.19041910231182,
+    "coremark_per_mhz": 2.636682188974512,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000001\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K validation run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 417190970\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0x18f2\r\n[0]crclist       : 0xe3c1\r\n[0]crcmatrix     : 0x0747\r\n[0]crcstate      : 0x8d84\r\n[0]crcfinal      : 0x30f5\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18DDD43A\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 9,
+    "received_at": "2026-10-30T18:08:10.346+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 8,
+    "received_at": "2026-10-30T17:33:48.487+08:00",
+    "mode": 1,
+    "clock_hz": 27000000,
+    "ticks": 417190970,
+    "seconds": 15.451517407407408,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "18f2",
+      "crclist": "e3c1",
+      "crcmatrix": "0747",
+      "crcstate": "8d84"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.19041910231182,
+    "coremark_per_mhz": 2.636682188974512,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000001\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K validation run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 417190970\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0x18f2\r\n[0]crclist       : 0xe3c1\r\n[0]crcmatrix     : 0x0747\r\n[0]crcstate      : 0x8d84\r\n[0]crcfinal      : 0x30f5\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18DDD43A\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 7,
+    "received_at": "2026-10-30T17:33:31.128+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 6,
+    "received_at": "2026-10-30T13:01:58.181+08:00",
+    "mode": 1,
+    "clock_hz": 27000000,
+    "ticks": 417190970,
+    "seconds": 15.451517407407408,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "18f2",
+      "crclist": "e3c1",
+      "crcmatrix": "0747",
+      "crcstate": "8d84"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.19041910231182,
+    "coremark_per_mhz": 2.636682188974512,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000001\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K validation run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 417190970\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0x18f2\r\n[0]crclist       : 0xe3c1\r\n[0]crcmatrix     : 0x0747\r\n[0]crcstate      : 0x8d84\r\n[0]crcfinal      : 0x30f5\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18DDD43A\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 5,
+    "received_at": "2026-10-30T13:01:40.680+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 4,
+    "received_at": "2026-10-30T12:05:59.131+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 3,
+    "received_at": "2026-10-30T11:56:53.241+08:00",
+    "mode": 0,
+    "clock_hz": 27000000,
+    "ticks": 416167829,
+    "seconds": 15.413623296296297,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "e9f5",
+      "crclist": "e714",
+      "crcmatrix": "1fd7",
+      "crcstate": "8e3a"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.36543944630569,
+    "coremark_per_mhz": 2.6431644239372476,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000000\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K performance run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 416167829\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0xe9f5\r\n[0]crclist       : 0xe714\r\n[0]crcmatrix     : 0x1fd7\r\n[0]crcstate      : 0x8e3a\r\n[0]crcfinal      : 0x33ff\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18CE3795\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  },
+  {
+    "id": 2,
+    "received_at": "2026-10-30T11:41:53.872+08:00",
+    "mode": 1,
+    "clock_hz": 27000000,
+    "ticks": 417190970,
+    "seconds": 15.451517407407408,
+    "iterations": 1100,
+    "cpu_options": 3,
+    "crcs": {
+      "seedcrc": "18f2",
+      "crclist": "e3c1",
+      "crcmatrix": "0747",
+      "crcstate": "8d84"
+    },
+    "crc_ok": true,
+    "valid": true,
+    "iterations_per_second": 71.19041910231182,
+    "coremark_per_mhz": 2.636682188974512,
+    "raw": "GWX COREMARK BEGIN\r\nMODE=00000001\r\nCLOCK_HZ=019BFCC0\r\nCPU_OPTIONS=00000003\r\nGUANWEIXIN five-stage RV32I / cached synchronous memory\r\n2K validation run parameters for coremark.\r\nCoreMark Size    : 666\r\nTotal ticks      : 417190970\r\nTotal time (secs): 15\r\nIterations/Sec   : 73\r\nIterations       : 1100\r\nCompiler version : GCC 15.2.0\r\nCompiler flags   : CoreMark -O2; app -Os; rv32i_zmmul_zicsr; 64KiB RAM\r\nMemory location  : 64KiB RAM / static 2000B\r\nseedcrc          : 0x18f2\r\n[0]crclist       : 0xe3c1\r\n[0]crcmatrix     : 0x0747\r\n[0]crcstate      : 0x8d84\r\n[0]crcfinal      : 0x30f5\r\nCorrect operation validated. See README.md for run and reporting rules.\r\nTICKS_LOW=18DDD43A\r\nTICKS_HIGH=00000000\r\nCOREMARK_RETURN=00000000\r\nGWX COREMARK END\r\n",
+    "origin": "SERIAL"
+  }
+]

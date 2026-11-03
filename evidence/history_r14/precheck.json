@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-30T18:06:18.031848",
+  "status": {
+    "latest": 128,
+    "count": 128,
+    "benchmark_latest": 8,
+    "benchmark_count": 8,
+    "port": "COM8",
+    "connected": true,
+    "ready": false,
+    "pending": false,
+    "error": "",
+    "ai_running": false,
+    "ai_elapsed_seconds": null,
+    "ai_result_id": null,
+    "external_enabled": false,
+    "phase": "等待同步",
+    "ai_count": 25,
+    "last_serial_clock_hz": 27000000
+  },
+  "raw_offset": 231554,
+  "bitstream": "F:\\FPGA_Work\\gwx_ai_r14\\pds_run\\generate_bitstream\\guanweixin_ai_board_top.sbit",
+  "bitstream_sha256": "a8d0eef6335670cb62318383a640e1aeb71a98f2de5aa8ca676b6ab856c12af6"
+}

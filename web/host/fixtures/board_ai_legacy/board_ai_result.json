@@ -1,0 +1,251 @@
+{
+  "origin": "SERIAL_UART",
+  "port": "COM8",
+  "received_at": "2026-10-29T16:42:44.959657+08:00",
+  "host_model_executed": false,
+  "external_signal_tested": false,
+  "frame": {
+    "EXEC": "FPGA_RV32I",
+    "RECORD": 46,
+    "CHANNEL": 7,
+    "CLOCK_HZ": 27000000,
+    "MODEL_CRC": 1487126038,
+    "ACCEL": 1,
+    "EXPECTED_PERIOD": 8,
+    "PROMPT_TOKENS": 12,
+    "WORKING_BYTES": 48916,
+    "INFERENCE_TICKS_LOW": 1112081759,
+    "INFERENCE_TICKS_HIGH": 0,
+    "TOKEN": 459,
+    "EOS": 2,
+    "LABEL": 4,
+    "SCORE_PERMILLE": 901,
+    "DOT_GROUPS": 56576,
+    "STATUS": "PASS",
+    "inference_ticks": 1112081759,
+    "nominal_inference_seconds": 41.1882132962963,
+    "execution_is_self_declared": true,
+    "physical_hardware_proven_by_frame_alone": false,
+    "score_is_calibrated_probability": false
+  },
+  "capture": {
+    "board_id": 46,
+    "status": "PASS",
+    "source": "INTERNAL",
+    "raw": "GWX DET8 v0.2\r\nID=0000002E\r\nCLOCK_HZ=019BFCC0\r\nSOURCE=INTERNAL\r\nSCENARIO=00000003\r\nINJECT_CHANNEL=00000007\r\nDIVIDER=0000010E\r\nTRIGGER_MASK=000000FF\r\nTRIGGER_VALUE=00000010\r\nTRIGGER_MODE=00000000\r\nDATA=107F7F0000000000007F7F0000000000007F7F0000000000007F7F0000000000007F7F0000000000007F7F0000000000007F7F0000000000007F7F0000000000\r\nCOUNT=00000040\r\nSUM=00000800\r\nHW_SUM=00000800\r\nCAPTURE=PASS\r\nMONITOR_MASK=FF\r\nPERIOD_MIN=00000006\r\nPERIOD_MAX=0000000A\r\nMISSING_GAP=0000000E\r\nFAULT_COUNT=00000001\r\nCH00=NONE,FFFFFFFF,00000000\r\nCH01=NONE,FFFFFFFF,00000000\r\nCH02=NONE,FFFFFFFF,00000000\r\nCH03=NONE,FFFFFFFF,00000000\r\nCH04=NONE,FFFFFFFF,00000000\r\nCH05=NONE,FFFFFFFF,00000000\r\nCH06=NONE,FFFFFFFF,00000000\r\nCH07=STUCK,00000000,00000000\r\nANALYSIS_CYCLES=000053D2\r\nANALYSIS_RETIRED=00001A26\r\nANALYSIS_BRANCHES=0000068D\r\nANALYSIS_DATA_STALLS=0000071D\r\nANALYSIS_FETCH_STALLS=00001EF2\r\nANALYSIS_FORWARD_EVENTS=00000C4F\r\nANALYSIS_FLUSH_EVENTS=0000010B\r\nCPU_OPTIONS=00000003\r\nTRACE_COUNT=00000010\r\nTRACE=00000394,32A7A023,00000000,00000000\r\nTRACE=00000398,3107A783,C5C269DA,0000001F\r\nTRACE=0000039C,014AA283,000000FF,0000000B\r\nTRACE=000003A0,0004C383,00000010,0000000F\r\nTRACE=000003A4,00F12A23,00000000,00000028\r\nTRACE=000003A8,400007B7,40000000,0000001F\r\nTRACE=000003AC,3007A783,3CA7A892,0000001F\r\nTRACE=000003B0,00200993,00000002,00000027\r\nTRACE=000003B4,04000A13,00000040,00000029\r\nTRACE=000003B8,00F12C23,00000000,00000030\r\nTRACE=000003BC,400007B7,40000000,0000001F\r\nTRACE=000003C0,3147A783,5C3C069D,0000001F\r\nTRACE=000003C4,00800F93,00000008,0000003F\r\nTRACE=000003C8,00F12E23,00000000,00000038\r\nTRACE=000003CC,400007B7,40000000,0000001F\r\nTRACE=000003D0,3187A783,398A26B0,0000001F\r\nEND\r\n",
+    "faults": [
+      {
+        "channel": 7,
+        "code": "STUCK",
+        "index": 0,
+        "gap": 0
+      }
+    ],
+    "samples": [
+      16,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      127,
+      127,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "trace": [
+      {
+        "pc": 916,
+        "instruction": 849846307,
+        "data": 0,
+        "write": false,
+        "rd": 0
+      },
+      {
+        "pc": 920,
+        "instruction": 822585219,
+        "data": 3317852634,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 924,
+        "instruction": 21668483,
+        "data": 255,
+        "write": true,
+        "rd": 5
+      },
+      {
+        "pc": 928,
+        "instruction": 312195,
+        "data": 16,
+        "write": true,
+        "rd": 7
+      },
+      {
+        "pc": 932,
+        "instruction": 15804963,
+        "data": 0,
+        "write": false,
+        "rd": 20
+      },
+      {
+        "pc": 936,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 940,
+        "instruction": 805808003,
+        "data": 1017620626,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 944,
+        "instruction": 2099603,
+        "data": 2,
+        "write": true,
+        "rd": 19
+      },
+      {
+        "pc": 948,
+        "instruction": 67111443,
+        "data": 64,
+        "write": true,
+        "rd": 20
+      },
+      {
+        "pc": 952,
+        "instruction": 15805475,
+        "data": 0,
+        "write": false,
+        "rd": 24
+      },
+      {
+        "pc": 956,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 960,
+        "instruction": 826779523,
+        "data": 1547437725,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 964,
+        "instruction": 8392595,
+        "data": 8,
+        "write": true,
+        "rd": 31
+      },
+      {
+        "pc": 968,
+        "instruction": 15805987,
+        "data": 0,
+        "write": false,
+        "rd": 28
+      },
+      {
+        "pc": 972,
+        "instruction": 1073743799,
+        "data": 1073741824,
+        "write": true,
+        "rd": 15
+      },
+      {
+        "pc": 976,
+        "instruction": 830973827,
+        "data": 965355184,
+        "write": true,
+        "rd": 15
+      }
+    ],
+    "clock_hz": 27000000,
+    "config": {
+      "cmd": 2,
+      "divider": 270,
+      "mask": 255,
+      "value": 16,
+      "trigger": 0,
+      "monitor": 255,
+      "pmin": 6,
+      "pmax": 10,
+      "missing": 14,
+      "mode": 3,
+      "channel": 7
+    },
+    "analysis": {
+      "cycles": 21458,
+      "retired": 6694,
+      "branches": 1677,
+      "data_stalls": 1821,
+      "fetch_stalls": 7922,
+      "forward_events": 3151,
+      "flush_events": 267
+    },
+    "cpu_options": 3
+  },
+  "uart_sha256": "f9b51bcbba7d4c649a148eb21a61ebb8461e65db9ca1bbaef763f4490e327d79",
+  "model_file_sha256": "238d90734ba1775124a5f0c5a37eb02b1cb02a8ceefcd4df58e6e3ef06fbf448"
+}

@@ -1,0 +1,67 @@
+{
+  "synthetic_only": true,
+  "targets": {
+    "NORMAL": [
+      900,
+      150,
+      150
+    ],
+    "MISSING_PULSE": [
+      1200,
+      150,
+      150
+    ],
+    "PERIOD": [
+      1200,
+      150,
+      150
+    ],
+    "UNKNOWN": [
+      350,
+      100,
+      100
+    ]
+  },
+  "counts": {
+    "NORMAL": [
+      900,
+      150,
+      150
+    ],
+    "MISSING_PULSE": [
+      1200,
+      150,
+      150
+    ],
+    "PERIOD": [
+      1200,
+      150,
+      150
+    ],
+    "UNKNOWN": [
+      350,
+      100,
+      100
+    ]
+  },
+  "attempts": {
+    "NORMAL": 2526,
+    "MISSING_PULSE": 2626,
+    "PERIOD": 2374,
+    "UNKNOWN": 2909
+  },
+  "train_rows": 3652,
+  "validation_rows": 550,
+  "test_rows": 550,
+  "split_policy": "SHA256 of exact model prompt group, all splits pairwise disjoint; test excludes old training prompts and historical evaluation prompts",
+  "intersection": 0,
+  "constant_classes": "Only two canonical patterns exist; trained anchors and regression checks, excluded from unseen-prompt accuracy",
+  "unknown_definition": "Insufficient periodic evidence, one/two pulses; no contradiction with known periodic classes",
+  "reserved_historical_prompts": 72,
+  "test_used_for_selection": false,
+  "case_files_sha256": {
+    "train": "e0f83781bf319308895e6999541b79c14969fb21d682371db1e15f5baa21250f",
+    "validation": "d6b0690cc81e357b824f3a4d0e0723d4a58c7ab70b774eaf9a13ffb73010796f",
+    "test": "beb3c853765ea53e11d8bc19fd4c6db86cc0d616e622f2f680175631a836a05f"
+  }
+}

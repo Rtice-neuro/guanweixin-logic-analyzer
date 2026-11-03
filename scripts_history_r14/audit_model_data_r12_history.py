@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib,zlib,collections,sys
+R=Path(__file__).resolve().parents[1];T=R/'training/data';E=json.loads((R/'verification/ai_synthetic_evaluation.json').read_text());splits={n:[json.loads(l)for l in(T/(n+'.jsonl')).read_text().splitlines()]for n in('train','validation','test')};sets={n:set(x['prompt']for x in v)for n,v in splits.items()}
+checks=E['checks'];unseen=[c for c in checks if c['prompt']not in sets['train']];classes={}
+for label in range(5):
+ rows=[c for c in checks if c['expected']==label];u=[c for c in unseen if c['expected']==label];classes[label]=dict(total=len(rows),correct=sum(c['predicted']==label for c in rows),training_prompt_overlap=sum(c['prompt']in sets['train']for c in rows),unseen_total=len(u),unseen_correct=sum(c['predicted']==label for c in u))
+labels=collections.defaultdict(set)
+for c in splits['train']:labels[c['prompt']].add(c['answer'])
+model=(R/'model.bin').read_bytes();report=dict(model_sha256=hashlib.sha256(model).hexdigest(),model_crc32=f'{zlib.crc32(model):08x}',split_cases={n:len(v)for n,v in splits.items()},unique_prompts={n:len(v)for n,v in sets.items()},train_validation_prompt_intersection=len(sets['train']&sets['validation']),train_test_prompt_intersection=len(sets['train']&sets['test']),training_prompts_with_conflicting_labels=sum(len(v)>1 for v in labels.values()),evaluation_cases=len(checks),evaluation_training_prompt_overlap=sum(c['prompt']in sets['train']for c in checks),all_cases_accuracy=sum(c['predicted']==c['expected']for c in checks)/len(checks),unseen_prompt_cases=len(unseen),unseen_prompt_accuracy=sum(c['predicted']==c['expected']for c in unseen)/len(unseen),unseen_class_distribution_is_not_balanced=True,per_class=classes,external_measurements=False,conclusion='The 82.08% overall synthetic score is not a strict independent generalization score; use per-class unseen counts, not a balanced-five-class claim.')
+(R/'verification_fresh/model_data_audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,ensure_ascii=False,indent=2))

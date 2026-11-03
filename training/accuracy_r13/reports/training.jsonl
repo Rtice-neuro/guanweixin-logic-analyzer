@@ -1,0 +1,12 @@
+{"step": 1, "loss": 0.25331300497055054, "validation_accuracy": 0.850909090909091, "anchor_accuracy": 1.0, "elapsed": 0.21853809999993246}
+{"step": 200, "loss": 0.0006621084758080542, "validation_accuracy": 0.9963636363636363, "anchor_accuracy": 1.0, "elapsed": 7.914541999999528}
+{"step": 400, "loss": 0.000158719762112014, "validation_accuracy": 0.9981818181818182, "anchor_accuracy": 1.0, "elapsed": 15.68697019999945}
+{"step": 600, "loss": 2.8668198865489103e-05, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 23.56622349999998}
+{"step": 800, "loss": 1.432841509085847e-05, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 31.43325989999994}
+{"step": 1000, "loss": 2.895777470257599e-06, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 39.69372569999996}
+{"step": 1200, "loss": 1.4441671964959824e-06, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 47.61466810000002}
+{"step": 1400, "loss": 8.468813916806539e-07, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 55.70092999999997}
+{"step": 1600, "loss": 4.147486833971925e-07, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 63.62765330000002}
+{"step": 1800, "loss": 2.756713683993439e-07, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 71.63939269999992}
+{"step": 2000, "loss": 1.67638020798222e-07, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 79.51519269999972}
+{"step": 2200, "loss": 7.574755755967999e-08, "validation_accuracy": 1.0, "anchor_accuracy": 1.0, "elapsed": 87.37655619999987}

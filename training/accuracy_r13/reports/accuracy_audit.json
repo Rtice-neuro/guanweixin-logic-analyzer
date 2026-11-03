@@ -1,0 +1,3960 @@
+{
+  "synthetic_only": true,
+  "board_inference_tested": false,
+  "training": {
+    "stage": "HOST_TRAINED_Q4_AWAITING_C_VALIDATION",
+    "seed": 3013,
+    "architecture_unchanged": true,
+    "firmware_runtime_unchanged": true,
+    "loss": "Response-only LM loss; six balanced training classes; no rule outputs as model input",
+    "history": [
+      {
+        "step": 1,
+        "loss": 0.25331300497055054,
+        "validation_accuracy": 0.850909090909091,
+        "anchor_accuracy": 1.0,
+        "elapsed": 0.21853809999993246
+      },
+      {
+        "step": 200,
+        "loss": 0.0006621084758080542,
+        "validation_accuracy": 0.9963636363636363,
+        "anchor_accuracy": 1.0,
+        "elapsed": 7.914541999999528
+      },
+      {
+        "step": 400,
+        "loss": 0.000158719762112014,
+        "validation_accuracy": 0.9981818181818182,
+        "anchor_accuracy": 1.0,
+        "elapsed": 15.68697019999945
+      },
+      {
+        "step": 600,
+        "loss": 2.8668198865489103e-05,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 23.56622349999998
+      },
+      {
+        "step": 800,
+        "loss": 1.432841509085847e-05,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 31.43325989999994
+      },
+      {
+        "step": 1000,
+        "loss": 2.895777470257599e-06,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 39.69372569999996
+      },
+      {
+        "step": 1200,
+        "loss": 1.4441671964959824e-06,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 47.61466810000002
+      },
+      {
+        "step": 1400,
+        "loss": 8.468813916806539e-07,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 55.70092999999997
+      },
+      {
+        "step": 1600,
+        "loss": 4.147486833971925e-07,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 63.62765330000002
+      },
+      {
+        "step": 1800,
+        "loss": 2.756713683993439e-07,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 71.63939269999992
+      },
+      {
+        "step": 2000,
+        "loss": 1.67638020798222e-07,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 79.51519269999972
+      },
+      {
+        "step": 2200,
+        "loss": 7.574755755967999e-08,
+        "validation_accuracy": 1.0,
+        "anchor_accuracy": 1.0,
+        "elapsed": 87.37655619999987
+      }
+    ],
+    "test_used_for_selection": false,
+    "validation_before": {
+      "accuracy": 0.8490909090909091,
+      "correct": 467,
+      "total": 550,
+      "confusion": [
+        [
+          143,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          146,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          15,
+          52,
+          2,
+          2,
+          28,
+          0
+        ]
+      ],
+      "columns": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN",
+        "INVALID"
+      ],
+      "rows": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN"
+      ],
+      "rule_baseline_accuracy": 1.0,
+      "invalid_outputs": 0,
+      "errors": [
+        {
+          "id": "validation-UNKNOWN-00078",
+          "prompt": "h16 e4 g28\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00025",
+          "prompt": "h14 e4 g14\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00052",
+          "prompt": "h14 e4 g28\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00027",
+          "prompt": "h13 e4 g27\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00030",
+          "prompt": "h13 e4 g19\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00041",
+          "prompt": "h14 e4 g38\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00049",
+          "prompt": "h10 e4 g44\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-NORMAL-00087",
+          "prompt": "h34 e8 g17,15,17\nanswer:",
+          "expected": "A",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00040",
+          "prompt": "h6 e4 g57\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00051",
+          "prompt": "h19 e4 g41\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00045",
+          "prompt": "h14 e4 g36\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00063",
+          "prompt": "h12 e4 g37\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00098",
+          "prompt": "h6 e4 g23\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00008",
+          "prompt": "h17 e4 g27\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00089",
+          "prompt": "h16 e4 g48\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00048",
+          "prompt": "h13 e4 g37\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00058",
+          "prompt": "h10 e4 g36\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00061",
+          "prompt": "h6 e4 g52\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-NORMAL-00077",
+          "prompt": "h28 e7 g16,16\nanswer:",
+          "expected": "A",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00084",
+          "prompt": "h13 e4 g14\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00076",
+          "prompt": "h20 e4 g28\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00074",
+          "prompt": "h4 e4 g37\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00003",
+          "prompt": "h11 e4 g63\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-MISSING_PULSE-00032",
+          "prompt": "h40 e18 g16,16,16,16,32,16,16,16\nanswer:",
+          "expected": "B",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00093",
+          "prompt": "h13 e4 g39\nanswer:",
+          "expected": "F",
+          "predicted": "B",
+          "token_id": 445
+        },
+        {
+          "id": "validation-UNKNOWN-00075",
+          "prompt": "h11 e4 g41\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00082",
+          "prompt": "h8 e4 g38\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-NORMAL-00117",
+          "prompt": "h22 e9 g17,15,16\nanswer:",
+          "expected": "A",
+          "predicted": "C",
+          "token_id": 457
+        },
+        {
+          "id": "validation-UNKNOWN-00071",
+          "prompt": "h16 e3 g60\nanswer:",
+          "expected": "F",
+          "predicted": "D",
+          "token_id": 455
+        },
+        {
+          "id": "validation-UNKNOWN-00062",
+          "prompt": "h10 e4 g27\nanswer:",
+          "expected": "F",
+          "predicted": "C",
+          "token_id": 457
+        }
+      ]
+    },
+    "best_anchor": 1.0,
+    "best_step": 600,
+    "validation": {
+      "accuracy": 1.0,
+      "correct": 550,
+      "total": 550,
+      "confusion": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          150,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          0
+        ]
+      ],
+      "columns": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN",
+        "INVALID"
+      ],
+      "rows": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN"
+      ],
+      "rule_baseline_accuracy": 1.0,
+      "invalid_outputs": 0,
+      "errors": []
+    },
+    "test": {
+      "accuracy": 0.9981818181818182,
+      "correct": 549,
+      "total": 550,
+      "confusion": [
+        [
+          150,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          150,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          149,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          0
+        ]
+      ],
+      "columns": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN",
+        "INVALID"
+      ],
+      "rows": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN"
+      ],
+      "rule_baseline_accuracy": 1.0,
+      "invalid_outputs": 0,
+      "errors": [
+        {
+          "id": "test-PERIOD-00116",
+          "prompt": "h16 e10 g17,16,15,11\nanswer:",
+          "expected": "C",
+          "predicted": "A",
+          "token_id": 447
+        }
+      ]
+    },
+    "anchors": {
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2,
+      "confusion": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "columns": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN",
+        "INVALID"
+      ],
+      "rows": [
+        "NORMAL",
+        "MISSING_PULSE",
+        "PERIOD",
+        "STUCK_HIGH",
+        "STUCK_LOW",
+        "UNKNOWN"
+      ],
+      "rule_baseline_accuracy": 1.0,
+      "invalid_outputs": 0,
+      "errors": []
+    },
+    "export": {
+      "quantization": "Q8_0 group64 matmul weights; RMSNorm/RoPE/softmax/SwiGLU stay FP32",
+      "context": 64,
+      "full_integer_inference": false,
+      "original_hidden": 172,
+      "padded_hidden": 192,
+      "padding_preserves_fp32_function": true,
+      "tensors": [
+        {
+          "name": "embedding",
+          "shape": [
+            512,
+            64
+          ],
+          "offset": 3072,
+          "qbytes": 32768,
+          "scale_bytes": 2048,
+          "max_abs_error": 0.004886910319328308
+        },
+        {
+          "name": "layer0.wq",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 37888,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.006186246871948242
+        },
+        {
+          "name": "layer1.wq",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 42240,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.0071336328983306885
+        },
+        {
+          "name": "layer2.wq",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 46592,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.005480974912643433
+        },
+        {
+          "name": "layer3.wq",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 50944,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.007251262664794922
+        },
+        {
+          "name": "layer4.wq",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 55296,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.004881620407104492
+        },
+        {
+          "name": "layer0.wk",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 59648,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.004291415214538574
+        },
+        {
+          "name": "layer1.wk",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 61824,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.004707038402557373
+        },
+        {
+          "name": "layer2.wk",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 64000,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.0037871599197387695
+        },
+        {
+          "name": "layer3.wk",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 66176,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.004529416561126709
+        },
+        {
+          "name": "layer4.wk",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 68352,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.004020363092422485
+        },
+        {
+          "name": "layer0.wv",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 70528,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.0010255128145217896
+        },
+        {
+          "name": "layer1.wv",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 72704,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.0008286610245704651
+        },
+        {
+          "name": "layer2.wv",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 74880,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.0011279433965682983
+        },
+        {
+          "name": "layer3.wv",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 77056,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.001061880961060524
+        },
+        {
+          "name": "layer4.wv",
+          "shape": [
+            32,
+            64
+          ],
+          "offset": 79232,
+          "qbytes": 2048,
+          "scale_bytes": 128,
+          "max_abs_error": 0.0018540583550930023
+        },
+        {
+          "name": "layer0.wo",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 81408,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.002171464264392853
+        },
+        {
+          "name": "layer1.wo",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 85760,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.001340225338935852
+        },
+        {
+          "name": "layer2.wo",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 90112,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.0015341490507125854
+        },
+        {
+          "name": "layer3.wo",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 94464,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.0015175044536590576
+        },
+        {
+          "name": "layer4.wo",
+          "shape": [
+            64,
+            64
+          ],
+          "offset": 98816,
+          "qbytes": 4096,
+          "scale_bytes": 256,
+          "max_abs_error": 0.0024087727069854736
+        },
+        {
+          "name": "layer0.w1",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 103168,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.002618074417114258
+        },
+        {
+          "name": "layer1.w1",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 116224,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0028036683797836304
+        },
+        {
+          "name": "layer2.w1",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 129280,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0023981109261512756
+        },
+        {
+          "name": "layer3.w1",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 142336,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0025914907455444336
+        },
+        {
+          "name": "layer4.w1",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 155392,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.002300456166267395
+        },
+        {
+          "name": "layer0.w2",
+          "shape": [
+            64,
+            192
+          ],
+          "offset": 168448,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0027462244033813477
+        },
+        {
+          "name": "layer1.w2",
+          "shape": [
+            64,
+            192
+          ],
+          "offset": 181504,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0023123323917388916
+        },
+        {
+          "name": "layer2.w2",
+          "shape": [
+            64,
+            192
+          ],
+          "offset": 194560,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0025473982095718384
+        },
+        {
+          "name": "layer3.w2",
+          "shape": [
+            64,
+            192
+          ],
+          "offset": 207616,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0027874112129211426
+        },
+        {
+          "name": "layer4.w2",
+          "shape": [
+            64,
+            192
+          ],
+          "offset": 220672,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.003417402505874634
+        },
+        {
+          "name": "layer0.w3",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 233728,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0021306276321411133
+        },
+        {
+          "name": "layer1.w3",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 246784,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.0019322335720062256
+        },
+        {
+          "name": "layer2.w3",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 259840,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.002149280160665512
+        },
+        {
+          "name": "layer3.w3",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 272896,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.002333343029022217
+        },
+        {
+          "name": "layer4.w3",
+          "shape": [
+            192,
+            64
+          ],
+          "offset": 285952,
+          "qbytes": 12288,
+          "scale_bytes": 768,
+          "max_abs_error": 0.002141416072845459
+        }
+      ],
+      "file_bytes": 299008,
+      "model_sha256": "4ed7bdbe95d514486604e7ba28407e44e4d7d2da78661fd26115ae8344d0fb5c",
+      "fpga_deployed": false
+    },
+    "seconds": 87.72072789999947,
+    "q4_sha256": "b92b1169950003f83feb0e99768917cc53dad483c9c7c22c2d1dbbaa5ccec711",
+    "model_bytes": 159744
+  },
+  "split": {
+    "synthetic_only": true,
+    "targets": {
+      "NORMAL": [
+        900,
+        150,
+        150
+      ],
+      "MISSING_PULSE": [
+        1200,
+        150,
+        150
+      ],
+      "PERIOD": [
+        1200,
+        150,
+        150
+      ],
+      "UNKNOWN": [
+        350,
+        100,
+        100
+      ]
+    },
+    "counts": {
+      "NORMAL": [
+        900,
+        150,
+        150
+      ],
+      "MISSING_PULSE": [
+        1200,
+        150,
+        150
+      ],
+      "PERIOD": [
+        1200,
+        150,
+        150
+      ],
+      "UNKNOWN": [
+        350,
+        100,
+        100
+      ]
+    },
+    "attempts": {
+      "NORMAL": 2526,
+      "MISSING_PULSE": 2626,
+      "PERIOD": 2374,
+      "UNKNOWN": 2909
+    },
+    "train_rows": 3652,
+    "validation_rows": 550,
+    "test_rows": 550,
+    "split_policy": "SHA256 of exact model prompt group, all splits pairwise disjoint; test excludes old training prompts and historical evaluation prompts",
+    "intersection": 0,
+    "constant_classes": "Only two canonical patterns exist; trained anchors and regression checks, excluded from unseen-prompt accuracy",
+    "unknown_definition": "Insufficient periodic evidence, one/two pulses; no contradiction with known periodic classes",
+    "reserved_historical_prompts": 72,
+    "test_used_for_selection": false,
+    "case_files_sha256": {
+      "train": "e0f83781bf319308895e6999541b79c14969fb21d682371db1e15f5baa21250f",
+      "validation": "d6b0690cc81e357b824f3a4d0e0723d4a58c7ab70b774eaf9a13ffb73010796f",
+      "test": "beb3c853765ea53e11d8bc19fd4c6db86cc0d616e622f2f680175631a836a05f"
+    }
+  },
+  "models": {
+    "baseline_q4": {
+      "test": {
+        "total": 550,
+        "correct": 439,
+        "accuracy": 0.7981818181818182,
+        "eos_correct": 550,
+        "errors": [
+          {
+            "id": "test-UNKNOWN-00046",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.997494102",
+            "groups": "62464",
+            "host_ms": "3.471000"
+          },
+          {
+            "id": "test-UNKNOWN-00035",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.468855411",
+            "groups": "62464",
+            "host_ms": "3.489000"
+          },
+          {
+            "id": "test-UNKNOWN-00096",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.99631691",
+            "groups": "62464",
+            "host_ms": "3.488000"
+          },
+          {
+            "id": "test-NORMAL-00077",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.716123164",
+            "groups": "85504",
+            "host_ms": "5.080000"
+          },
+          {
+            "id": "test-NORMAL-00002",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.772166371",
+            "groups": "85504",
+            "host_ms": "4.836000"
+          },
+          {
+            "id": "test-UNKNOWN-00030",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991086543",
+            "groups": "58624",
+            "host_ms": "3.404000"
+          },
+          {
+            "id": "test-NORMAL-00135",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.854292214",
+            "groups": "85504",
+            "host_ms": "4.891000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00119",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.498703212",
+            "groups": "181504",
+            "host_ms": "10.668000"
+          },
+          {
+            "id": "test-UNKNOWN-00011",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.81663692",
+            "groups": "62464",
+            "host_ms": "3.468000"
+          },
+          {
+            "id": "test-UNKNOWN-00014",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.896254718",
+            "groups": "62464",
+            "host_ms": "3.462000"
+          },
+          {
+            "id": "test-UNKNOWN-00081",
+            "expected_token": "453",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.929289937",
+            "groups": "62464",
+            "host_ms": "3.478000"
+          },
+          {
+            "id": "test-UNKNOWN-00099",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.921880364",
+            "groups": "58624",
+            "host_ms": "3.365000"
+          },
+          {
+            "id": "test-UNKNOWN-00082",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.911734045",
+            "groups": "62464",
+            "host_ms": "3.513000"
+          },
+          {
+            "id": "test-UNKNOWN-00053",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.97526902",
+            "groups": "62464",
+            "host_ms": "6.300000"
+          },
+          {
+            "id": "test-UNKNOWN-00002",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.946046233",
+            "groups": "62464",
+            "host_ms": "3.458000"
+          },
+          {
+            "id": "test-UNKNOWN-00092",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.856105268",
+            "groups": "62464",
+            "host_ms": "3.388000"
+          },
+          {
+            "id": "test-UNKNOWN-00067",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.976235926",
+            "groups": "62464",
+            "host_ms": "3.538000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00062",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.860691011",
+            "groups": "131584",
+            "host_ms": "7.360000"
+          },
+          {
+            "id": "test-UNKNOWN-00012",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.585149229",
+            "groups": "62464",
+            "host_ms": "3.479000"
+          },
+          {
+            "id": "test-UNKNOWN-00076",
+            "expected_token": "453",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.989979267",
+            "groups": "62464",
+            "host_ms": "3.613000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00090",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.525575399",
+            "groups": "169984",
+            "host_ms": "9.684000"
+          },
+          {
+            "id": "test-UNKNOWN-00023",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.983939528",
+            "groups": "58624",
+            "host_ms": "3.079000"
+          },
+          {
+            "id": "test-UNKNOWN-00085",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.970573425",
+            "groups": "62464",
+            "host_ms": "3.343000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00015",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.767980933",
+            "groups": "85504",
+            "host_ms": "5.464000"
+          },
+          {
+            "id": "test-UNKNOWN-00026",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.798957884",
+            "groups": "62464",
+            "host_ms": "3.474000"
+          },
+          {
+            "id": "test-UNKNOWN-00034",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.545473874",
+            "groups": "58624",
+            "host_ms": "3.155000"
+          },
+          {
+            "id": "test-UNKNOWN-00019",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.524503946",
+            "groups": "62464",
+            "host_ms": "3.682000"
+          },
+          {
+            "id": "test-UNKNOWN-00042",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.995849013",
+            "groups": "62464",
+            "host_ms": "3.546000"
+          },
+          {
+            "id": "test-UNKNOWN-00036",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.853220165",
+            "groups": "62464",
+            "host_ms": "3.389000"
+          },
+          {
+            "id": "test-NORMAL-00144",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.711751699",
+            "groups": "85504",
+            "host_ms": "4.827000"
+          },
+          {
+            "id": "test-UNKNOWN-00044",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.978452027",
+            "groups": "58624",
+            "host_ms": "3.333000"
+          },
+          {
+            "id": "test-UNKNOWN-00064",
+            "expected_token": "453",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.775407076",
+            "groups": "62464",
+            "host_ms": "3.503000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00149",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.906192899",
+            "groups": "181504",
+            "host_ms": "10.714000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00114",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.504835725",
+            "groups": "169984",
+            "host_ms": "9.935000"
+          },
+          {
+            "id": "test-UNKNOWN-00052",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.606698096",
+            "groups": "58624",
+            "host_ms": "3.257000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00061",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.425346464",
+            "groups": "85504",
+            "host_ms": "10.711000"
+          },
+          {
+            "id": "test-UNKNOWN-00005",
+            "expected_token": "453",
+            "predicted_token": "459",
+            "eos_token": "2",
+            "label": "4",
+            "score": "0.577234089",
+            "groups": "58624",
+            "host_ms": "8.495000"
+          },
+          {
+            "id": "test-UNKNOWN-00078",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.976690471",
+            "groups": "62464",
+            "host_ms": "3.281000"
+          },
+          {
+            "id": "test-UNKNOWN-00055",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.984307587",
+            "groups": "62464",
+            "host_ms": "3.685000"
+          },
+          {
+            "id": "test-PERIOD-00019",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.761314571",
+            "groups": "143104",
+            "host_ms": "9.827000"
+          },
+          {
+            "id": "test-UNKNOWN-00084",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.632129431",
+            "groups": "58624",
+            "host_ms": "3.398000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00111",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.521498024",
+            "groups": "85504",
+            "host_ms": "5.904000"
+          },
+          {
+            "id": "test-UNKNOWN-00020",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.992434263",
+            "groups": "62464",
+            "host_ms": "3.288000"
+          },
+          {
+            "id": "test-UNKNOWN-00047",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.992517054",
+            "groups": "62464",
+            "host_ms": "3.299000"
+          },
+          {
+            "id": "test-UNKNOWN-00056",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.988947749",
+            "groups": "62464",
+            "host_ms": "3.261000"
+          },
+          {
+            "id": "test-UNKNOWN-00066",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.751479506",
+            "groups": "62464",
+            "host_ms": "3.473000"
+          },
+          {
+            "id": "test-UNKNOWN-00080",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.616503298",
+            "groups": "62464",
+            "host_ms": "3.258000"
+          },
+          {
+            "id": "test-NORMAL-00126",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.688616395",
+            "groups": "85504",
+            "host_ms": "4.593000"
+          },
+          {
+            "id": "test-NORMAL-00105",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.673882961",
+            "groups": "85504",
+            "host_ms": "4.930000"
+          },
+          {
+            "id": "test-UNKNOWN-00043",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.984620571",
+            "groups": "62464",
+            "host_ms": "3.855000"
+          },
+          {
+            "id": "test-UNKNOWN-00031",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.92059046",
+            "groups": "62464",
+            "host_ms": "3.289000"
+          },
+          {
+            "id": "test-UNKNOWN-00088",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.953388155",
+            "groups": "58624",
+            "host_ms": "3.065000"
+          },
+          {
+            "id": "test-UNKNOWN-00058",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.996024013",
+            "groups": "62464",
+            "host_ms": "3.278000"
+          },
+          {
+            "id": "test-UNKNOWN-00091",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.995496035",
+            "groups": "62464",
+            "host_ms": "3.409000"
+          },
+          {
+            "id": "test-NORMAL-00149",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.892640352",
+            "groups": "85504",
+            "host_ms": "4.950000"
+          },
+          {
+            "id": "test-UNKNOWN-00041",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.993292212",
+            "groups": "62464",
+            "host_ms": "3.396000"
+          },
+          {
+            "id": "test-UNKNOWN-00073",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.938242257",
+            "groups": "62464",
+            "host_ms": "3.325000"
+          },
+          {
+            "id": "test-UNKNOWN-00079",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.986486912",
+            "groups": "62464",
+            "host_ms": "3.380000"
+          },
+          {
+            "id": "test-UNKNOWN-00094",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.966203749",
+            "groups": "62464",
+            "host_ms": "3.574000"
+          },
+          {
+            "id": "test-UNKNOWN-00065",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991448045",
+            "groups": "62464",
+            "host_ms": "3.286000"
+          },
+          {
+            "id": "test-UNKNOWN-00013",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.917606175",
+            "groups": "58624",
+            "host_ms": "3.207000"
+          },
+          {
+            "id": "test-UNKNOWN-00021",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.983371258",
+            "groups": "62464",
+            "host_ms": "3.427000"
+          },
+          {
+            "id": "test-UNKNOWN-00090",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.936743677",
+            "groups": "62464",
+            "host_ms": "3.589000"
+          },
+          {
+            "id": "test-UNKNOWN-00075",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.989516437",
+            "groups": "62464",
+            "host_ms": "3.546000"
+          },
+          {
+            "id": "test-UNKNOWN-00018",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991016984",
+            "groups": "62464",
+            "host_ms": "3.495000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00105",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.63975966",
+            "groups": "169984",
+            "host_ms": "9.643000"
+          },
+          {
+            "id": "test-UNKNOWN-00016",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.665316701",
+            "groups": "62464",
+            "host_ms": "8.030000"
+          },
+          {
+            "id": "test-UNKNOWN-00025",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.828188658",
+            "groups": "58624",
+            "host_ms": "7.152000"
+          },
+          {
+            "id": "test-UNKNOWN-00003",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.863858163",
+            "groups": "62464",
+            "host_ms": "7.813000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00006",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.614516973",
+            "groups": "100864",
+            "host_ms": "12.213000"
+          },
+          {
+            "id": "test-UNKNOWN-00022",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.935396433",
+            "groups": "62464",
+            "host_ms": "3.327000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00037",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.576813757",
+            "groups": "112384",
+            "host_ms": "6.494000"
+          },
+          {
+            "id": "test-UNKNOWN-00074",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.926419616",
+            "groups": "58624",
+            "host_ms": "4.726000"
+          },
+          {
+            "id": "test-MISSING_PULSE-00146",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.994368255",
+            "groups": "146944",
+            "host_ms": "8.564000"
+          },
+          {
+            "id": "test-UNKNOWN-00007",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.98251766",
+            "groups": "58624",
+            "host_ms": "3.607000"
+          },
+          {
+            "id": "test-NORMAL-00031",
+            "expected_token": "447",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.385182023",
+            "groups": "146944",
+            "host_ms": "8.208000"
+          },
+          {
+            "id": "test-NORMAL-00098",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.807596087",
+            "groups": "85504",
+            "host_ms": "4.662000"
+          },
+          {
+            "id": "test-UNKNOWN-00068",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.881351709",
+            "groups": "62464",
+            "host_ms": "3.288000"
+          },
+          {
+            "id": "test-UNKNOWN-00004",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.708718121",
+            "groups": "62464",
+            "host_ms": "5.790000"
+          },
+          {
+            "id": "test-UNKNOWN-00048",
+            "expected_token": "453",
+            "predicted_token": "455",
+            "eos_token": "2",
+            "label": "3",
+            "score": "0.753783166",
+            "groups": "58624",
+            "host_ms": "3.655000"
+          },
+          {
+            "id": "test-UNKNOWN-00070",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.998373628",
+            "groups": "58624",
+            "host_ms": "3.829000"
+          },
+          {
+            "id": "test-UNKNOWN-00086",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.98086369",
+            "groups": "58624",
+            "host_ms": "5.342000"
+          },
+          {
+            "id": "test-PERIOD-00116",
+            "expected_token": "457",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.98826772",
+            "groups": "100864",
+            "host_ms": "5.458000"
+          },
+          {
+            "id": "test-UNKNOWN-00069",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.977642298",
+            "groups": "62464",
+            "host_ms": "3.931000"
+          },
+          {
+            "id": "test-UNKNOWN-00063",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.946753263",
+            "groups": "58624",
+            "host_ms": "3.198000"
+          },
+          {
+            "id": "test-UNKNOWN-00054",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.954109907",
+            "groups": "62464",
+            "host_ms": "3.291000"
+          },
+          {
+            "id": "test-UNKNOWN-00049",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.988963962",
+            "groups": "62464",
+            "host_ms": "3.374000"
+          },
+          {
+            "id": "test-UNKNOWN-00087",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.95588994",
+            "groups": "62464",
+            "host_ms": "3.475000"
+          },
+          {
+            "id": "test-UNKNOWN-00039",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.998609781",
+            "groups": "62464",
+            "host_ms": "3.437000"
+          },
+          {
+            "id": "test-UNKNOWN-00051",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.970302224",
+            "groups": "58624",
+            "host_ms": "3.284000"
+          },
+          {
+            "id": "test-NORMAL-00129",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.872589588",
+            "groups": "85504",
+            "host_ms": "4.731000"
+          },
+          {
+            "id": "test-NORMAL-00063",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.664975703",
+            "groups": "97024",
+            "host_ms": "5.459000"
+          },
+          {
+            "id": "test-UNKNOWN-00045",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.893746674",
+            "groups": "62464",
+            "host_ms": "3.462000"
+          },
+          {
+            "id": "test-NORMAL-00029",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.874126852",
+            "groups": "85504",
+            "host_ms": "4.852000"
+          },
+          {
+            "id": "test-UNKNOWN-00060",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.943894207",
+            "groups": "62464",
+            "host_ms": "3.451000"
+          },
+          {
+            "id": "test-PERIOD-00109",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.938519478",
+            "groups": "108544",
+            "host_ms": "6.141000"
+          },
+          {
+            "id": "test-UNKNOWN-00010",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.541478217",
+            "groups": "62464",
+            "host_ms": "3.297000"
+          },
+          {
+            "id": "test-UNKNOWN-00024",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.731144547",
+            "groups": "62464",
+            "host_ms": "3.364000"
+          },
+          {
+            "id": "test-UNKNOWN-00001",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.896964431",
+            "groups": "62464",
+            "host_ms": "3.296000"
+          },
+          {
+            "id": "test-UNKNOWN-00029",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.760978758",
+            "groups": "62464",
+            "host_ms": "3.348000"
+          },
+          {
+            "id": "test-UNKNOWN-00093",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.992503166",
+            "groups": "62464",
+            "host_ms": "3.405000"
+          },
+          {
+            "id": "test-UNKNOWN-00000",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.6482144",
+            "groups": "62464",
+            "host_ms": "3.382000"
+          },
+          {
+            "id": "test-UNKNOWN-00083",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.987697423",
+            "groups": "58624",
+            "host_ms": "3.076000"
+          },
+          {
+            "id": "test-UNKNOWN-00032",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.980669856",
+            "groups": "62464",
+            "host_ms": "4.156000"
+          },
+          {
+            "id": "test-NORMAL-00095",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.899331808",
+            "groups": "73984",
+            "host_ms": "3.926000"
+          },
+          {
+            "id": "test-UNKNOWN-00097",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.952605724",
+            "groups": "62464",
+            "host_ms": "3.318000"
+          },
+          {
+            "id": "test-UNKNOWN-00028",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.985067129",
+            "groups": "62464",
+            "host_ms": "3.264000"
+          },
+          {
+            "id": "test-PERIOD-00121",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.738607526",
+            "groups": "97024",
+            "host_ms": "5.183000"
+          },
+          {
+            "id": "test-UNKNOWN-00040",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.858724654",
+            "groups": "62464",
+            "host_ms": "3.283000"
+          },
+          {
+            "id": "test-UNKNOWN-00027",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.976285458",
+            "groups": "62464",
+            "host_ms": "3.292000"
+          },
+          {
+            "id": "test-UNKNOWN-00017",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.973144293",
+            "groups": "58624",
+            "host_ms": "3.053000"
+          }
+        ],
+        "per_class": {
+          "UNKNOWN": {
+            "total": 100,
+            "correct": 18
+          },
+          "MISSING_PULSE": {
+            "total": 150,
+            "correct": 138
+          },
+          "PERIOD": {
+            "total": 150,
+            "correct": 146
+          },
+          "NORMAL": {
+            "total": 150,
+            "correct": 137
+          }
+        },
+        "three_periodic_classes": {
+          "total": 450,
+          "correct": 421
+        }
+      },
+      "validation": {
+        "total": 550,
+        "correct": 437,
+        "accuracy": 0.7945454545454546,
+        "eos_correct": 550,
+        "errors": [
+          {
+            "id": "validation-UNKNOWN-00078",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.998789132",
+            "groups": "62464",
+            "host_ms": "3.466000"
+          },
+          {
+            "id": "validation-NORMAL-00130",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.710381329",
+            "groups": "85504",
+            "host_ms": "4.657000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00003",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.598253191",
+            "groups": "85504",
+            "host_ms": "4.718000"
+          },
+          {
+            "id": "validation-UNKNOWN-00025",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.763022721",
+            "groups": "62464",
+            "host_ms": "3.294000"
+          },
+          {
+            "id": "validation-UNKNOWN-00052",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.989250302",
+            "groups": "62464",
+            "host_ms": "3.452000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00035",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.72011888",
+            "groups": "158464",
+            "host_ms": "8.875000"
+          },
+          {
+            "id": "validation-UNKNOWN-00027",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.985885262",
+            "groups": "62464",
+            "host_ms": "3.346000"
+          },
+          {
+            "id": "validation-UNKNOWN-00028",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.934889495",
+            "groups": "62464",
+            "host_ms": "3.494000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00053",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.508308649",
+            "groups": "85504",
+            "host_ms": "5.011000"
+          },
+          {
+            "id": "validation-UNKNOWN-00030",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.610051632",
+            "groups": "62464",
+            "host_ms": "3.342000"
+          },
+          {
+            "id": "validation-UNKNOWN-00041",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.641656995",
+            "groups": "62464",
+            "host_ms": "3.384000"
+          },
+          {
+            "id": "validation-NORMAL-00087",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.865292072",
+            "groups": "85504",
+            "host_ms": "4.586000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00043",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.4724738",
+            "groups": "135424",
+            "host_ms": "9.990000"
+          },
+          {
+            "id": "validation-UNKNOWN-00051",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.958283007",
+            "groups": "62464",
+            "host_ms": "3.497000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00149",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.423097849",
+            "groups": "169984",
+            "host_ms": "9.918000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00122",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.569028616",
+            "groups": "146944",
+            "host_ms": "8.616000"
+          },
+          {
+            "id": "validation-UNKNOWN-00045",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.472842187",
+            "groups": "62464",
+            "host_ms": "3.475000"
+          },
+          {
+            "id": "validation-UNKNOWN-00073",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.969405591",
+            "groups": "62464",
+            "host_ms": "3.465000"
+          },
+          {
+            "id": "validation-UNKNOWN-00063",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.977416635",
+            "groups": "62464",
+            "host_ms": "3.714000"
+          },
+          {
+            "id": "validation-UNKNOWN-00047",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.642804921",
+            "groups": "62464",
+            "host_ms": "3.559000"
+          },
+          {
+            "id": "validation-UNKNOWN-00098",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.997545302",
+            "groups": "58624",
+            "host_ms": "3.271000"
+          },
+          {
+            "id": "validation-UNKNOWN-00008",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.994129658",
+            "groups": "62464",
+            "host_ms": "3.466000"
+          },
+          {
+            "id": "validation-UNKNOWN-00089",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.969203353",
+            "groups": "62464",
+            "host_ms": "3.499000"
+          },
+          {
+            "id": "validation-UNKNOWN-00002",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.407722682",
+            "groups": "62464",
+            "host_ms": "3.469000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00077",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.414771348",
+            "groups": "97024",
+            "host_ms": "5.475000"
+          },
+          {
+            "id": "validation-UNKNOWN-00058",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.582988083",
+            "groups": "62464",
+            "host_ms": "3.493000"
+          },
+          {
+            "id": "validation-UNKNOWN-00061",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.996889055",
+            "groups": "58624",
+            "host_ms": "3.258000"
+          },
+          {
+            "id": "validation-UNKNOWN-00017",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.722308218",
+            "groups": "62464",
+            "host_ms": "3.461000"
+          },
+          {
+            "id": "validation-UNKNOWN-00084",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.938221574",
+            "groups": "62464",
+            "host_ms": "5.271000"
+          },
+          {
+            "id": "validation-UNKNOWN-00055",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.661974132",
+            "groups": "62464",
+            "host_ms": "4.432000"
+          },
+          {
+            "id": "validation-UNKNOWN-00076",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.967366099",
+            "groups": "62464",
+            "host_ms": "3.747000"
+          },
+          {
+            "id": "validation-NORMAL-00135",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.624803245",
+            "groups": "97024",
+            "host_ms": "5.595000"
+          },
+          {
+            "id": "validation-UNKNOWN-00091",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.844784439",
+            "groups": "62464",
+            "host_ms": "3.442000"
+          },
+          {
+            "id": "validation-UNKNOWN-00003",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.985525846",
+            "groups": "62464",
+            "host_ms": "3.461000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00032",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.863172054",
+            "groups": "146944",
+            "host_ms": "8.450000"
+          },
+          {
+            "id": "validation-NORMAL-00067",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.912937939",
+            "groups": "85504",
+            "host_ms": "4.707000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00001",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.501502335",
+            "groups": "85504",
+            "host_ms": "4.711000"
+          },
+          {
+            "id": "validation-UNKNOWN-00093",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.545278311",
+            "groups": "62464",
+            "host_ms": "3.450000"
+          },
+          {
+            "id": "validation-UNKNOWN-00075",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.964285612",
+            "groups": "62464",
+            "host_ms": "3.470000"
+          },
+          {
+            "id": "validation-NORMAL-00117",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.829503596",
+            "groups": "85504",
+            "host_ms": "5.075000"
+          },
+          {
+            "id": "validation-UNKNOWN-00071",
+            "expected_token": "453",
+            "predicted_token": "455",
+            "eos_token": "2",
+            "label": "3",
+            "score": "0.45359078",
+            "groups": "62464",
+            "host_ms": "3.686000"
+          },
+          {
+            "id": "validation-UNKNOWN-00062",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.99131155",
+            "groups": "62464",
+            "host_ms": "3.528000"
+          },
+          {
+            "id": "validation-UNKNOWN-00099",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.553061664",
+            "groups": "62464",
+            "host_ms": "3.873000"
+          },
+          {
+            "id": "validation-UNKNOWN-00015",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.961146832",
+            "groups": "62464",
+            "host_ms": "3.945000"
+          },
+          {
+            "id": "validation-UNKNOWN-00046",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.822586715",
+            "groups": "58624",
+            "host_ms": "3.236000"
+          },
+          {
+            "id": "validation-UNKNOWN-00043",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.993537128",
+            "groups": "62464",
+            "host_ms": "3.455000"
+          },
+          {
+            "id": "validation-NORMAL-00010",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.533373475",
+            "groups": "85504",
+            "host_ms": "4.857000"
+          },
+          {
+            "id": "validation-UNKNOWN-00035",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.989634573",
+            "groups": "58624",
+            "host_ms": "3.237000"
+          },
+          {
+            "id": "validation-UNKNOWN-00007",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.803610206",
+            "groups": "62464",
+            "host_ms": "3.314000"
+          },
+          {
+            "id": "validation-UNKNOWN-00090",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.849538028",
+            "groups": "62464",
+            "host_ms": "3.435000"
+          },
+          {
+            "id": "validation-UNKNOWN-00087",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991973937",
+            "groups": "62464",
+            "host_ms": "3.559000"
+          },
+          {
+            "id": "validation-UNKNOWN-00021",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991524339",
+            "groups": "58624",
+            "host_ms": "3.365000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00124",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.977237642",
+            "groups": "158464",
+            "host_ms": "9.628000"
+          },
+          {
+            "id": "validation-UNKNOWN-00033",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.987851739",
+            "groups": "62464",
+            "host_ms": "3.473000"
+          },
+          {
+            "id": "validation-UNKNOWN-00053",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.938604176",
+            "groups": "62464",
+            "host_ms": "3.503000"
+          },
+          {
+            "id": "validation-NORMAL-00041",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.758345664",
+            "groups": "85504",
+            "host_ms": "4.994000"
+          },
+          {
+            "id": "validation-UNKNOWN-00019",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.993601024",
+            "groups": "58624",
+            "host_ms": "3.161000"
+          },
+          {
+            "id": "validation-UNKNOWN-00064",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.566703737",
+            "groups": "62464",
+            "host_ms": "3.305000"
+          },
+          {
+            "id": "validation-UNKNOWN-00066",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.546617389",
+            "groups": "62464",
+            "host_ms": "3.445000"
+          },
+          {
+            "id": "validation-UNKNOWN-00038",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.862353981",
+            "groups": "62464",
+            "host_ms": "3.437000"
+          },
+          {
+            "id": "validation-UNKNOWN-00009",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.974804401",
+            "groups": "58624",
+            "host_ms": "3.235000"
+          },
+          {
+            "id": "validation-UNKNOWN-00094",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.999057353",
+            "groups": "62464",
+            "host_ms": "3.531000"
+          },
+          {
+            "id": "validation-UNKNOWN-00083",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.989293814",
+            "groups": "62464",
+            "host_ms": "3.525000"
+          },
+          {
+            "id": "validation-NORMAL-00107",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.844712794",
+            "groups": "85504",
+            "host_ms": "6.926000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00046",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.542515397",
+            "groups": "169984",
+            "host_ms": "10.349000"
+          },
+          {
+            "id": "validation-NORMAL-00013",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.479880244",
+            "groups": "100864",
+            "host_ms": "5.365000"
+          },
+          {
+            "id": "validation-UNKNOWN-00068",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.944273651",
+            "groups": "62464",
+            "host_ms": "3.683000"
+          },
+          {
+            "id": "validation-UNKNOWN-00057",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.930296481",
+            "groups": "62464",
+            "host_ms": "5.362000"
+          },
+          {
+            "id": "validation-NORMAL-00001",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.557079792",
+            "groups": "100864",
+            "host_ms": "6.029000"
+          },
+          {
+            "id": "validation-UNKNOWN-00023",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.941016436",
+            "groups": "62464",
+            "host_ms": "3.264000"
+          },
+          {
+            "id": "validation-PERIOD-00134",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.776597798",
+            "groups": "112384",
+            "host_ms": "6.515000"
+          },
+          {
+            "id": "validation-UNKNOWN-00070",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.558968186",
+            "groups": "62464",
+            "host_ms": "3.211000"
+          },
+          {
+            "id": "validation-UNKNOWN-00096",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.970151365",
+            "groups": "62464",
+            "host_ms": "3.397000"
+          },
+          {
+            "id": "validation-UNKNOWN-00022",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.59820044",
+            "groups": "58624",
+            "host_ms": "3.172000"
+          },
+          {
+            "id": "validation-NORMAL-00008",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.612846434",
+            "groups": "85504",
+            "host_ms": "5.523000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00082",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.51284188",
+            "groups": "135424",
+            "host_ms": "7.537000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00133",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.456565619",
+            "groups": "112384",
+            "host_ms": "6.105000"
+          },
+          {
+            "id": "validation-PERIOD-00058",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.801856816",
+            "groups": "193024",
+            "host_ms": "11.012000"
+          },
+          {
+            "id": "validation-UNKNOWN-00018",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.523406625",
+            "groups": "62464",
+            "host_ms": "3.305000"
+          },
+          {
+            "id": "validation-PERIOD-00139",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.902434528",
+            "groups": "193024",
+            "host_ms": "11.249000"
+          },
+          {
+            "id": "validation-NORMAL-00091",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.728941977",
+            "groups": "100864",
+            "host_ms": "5.367000"
+          },
+          {
+            "id": "validation-UNKNOWN-00056",
+            "expected_token": "453",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.946551383",
+            "groups": "62464",
+            "host_ms": "3.589000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00057",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.673561513",
+            "groups": "181504",
+            "host_ms": "10.624000"
+          },
+          {
+            "id": "validation-UNKNOWN-00059",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.997102201",
+            "groups": "62464",
+            "host_ms": "3.486000"
+          },
+          {
+            "id": "validation-UNKNOWN-00026",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.930081129",
+            "groups": "62464",
+            "host_ms": "3.369000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00128",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.544057488",
+            "groups": "85504",
+            "host_ms": "4.894000"
+          },
+          {
+            "id": "validation-UNKNOWN-00042",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.961443961",
+            "groups": "62464",
+            "host_ms": "3.418000"
+          },
+          {
+            "id": "validation-UNKNOWN-00005",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.97603941",
+            "groups": "62464",
+            "host_ms": "3.367000"
+          },
+          {
+            "id": "validation-UNKNOWN-00092",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.960457385",
+            "groups": "62464",
+            "host_ms": "3.489000"
+          },
+          {
+            "id": "validation-UNKNOWN-00039",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.988711238",
+            "groups": "62464",
+            "host_ms": "3.356000"
+          },
+          {
+            "id": "validation-UNKNOWN-00032",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.991301775",
+            "groups": "62464",
+            "host_ms": "3.451000"
+          },
+          {
+            "id": "validation-UNKNOWN-00065",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.998382568",
+            "groups": "58624",
+            "host_ms": "3.218000"
+          },
+          {
+            "id": "validation-NORMAL-00071",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.776466846",
+            "groups": "112384",
+            "host_ms": "6.362000"
+          },
+          {
+            "id": "validation-UNKNOWN-00011",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.950560808",
+            "groups": "62464",
+            "host_ms": "3.448000"
+          },
+          {
+            "id": "validation-UNKNOWN-00081",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.998816013",
+            "groups": "62464",
+            "host_ms": "3.344000"
+          },
+          {
+            "id": "validation-UNKNOWN-00077",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.620652735",
+            "groups": "62464",
+            "host_ms": "3.488000"
+          },
+          {
+            "id": "validation-UNKNOWN-00072",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.920129895",
+            "groups": "62464",
+            "host_ms": "3.329000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00147",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.968134224",
+            "groups": "169984",
+            "host_ms": "9.892000"
+          },
+          {
+            "id": "validation-UNKNOWN-00060",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.989422381",
+            "groups": "62464",
+            "host_ms": "3.439000"
+          },
+          {
+            "id": "validation-UNKNOWN-00079",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.666731834",
+            "groups": "58624",
+            "host_ms": "3.520000"
+          },
+          {
+            "id": "validation-NORMAL-00137",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.510230184",
+            "groups": "85504",
+            "host_ms": "7.063000"
+          },
+          {
+            "id": "validation-UNKNOWN-00080",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.995018363",
+            "groups": "62464",
+            "host_ms": "3.586000"
+          },
+          {
+            "id": "validation-UNKNOWN-00036",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.7288149",
+            "groups": "62464",
+            "host_ms": "3.284000"
+          },
+          {
+            "id": "validation-UNKNOWN-00095",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.884674013",
+            "groups": "62464",
+            "host_ms": "3.269000"
+          },
+          {
+            "id": "validation-UNKNOWN-00001",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.850768685",
+            "groups": "62464",
+            "host_ms": "3.358000"
+          },
+          {
+            "id": "validation-PERIOD-00018",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.649040103",
+            "groups": "93184",
+            "host_ms": "5.300000"
+          },
+          {
+            "id": "validation-UNKNOWN-00020",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.964855134",
+            "groups": "62464",
+            "host_ms": "3.440000"
+          },
+          {
+            "id": "validation-UNKNOWN-00037",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.99348712",
+            "groups": "62464",
+            "host_ms": "3.438000"
+          },
+          {
+            "id": "validation-UNKNOWN-00054",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.925635934",
+            "groups": "62464",
+            "host_ms": "3.605000"
+          },
+          {
+            "id": "validation-MISSING_PULSE-00056",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.516477764",
+            "groups": "158464",
+            "host_ms": "9.204000"
+          },
+          {
+            "id": "validation-UNKNOWN-00034",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.957065582",
+            "groups": "62464",
+            "host_ms": "3.481000"
+          },
+          {
+            "id": "validation-UNKNOWN-00050",
+            "expected_token": "453",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.971971214",
+            "groups": "58624",
+            "host_ms": "3.148000"
+          },
+          {
+            "id": "validation-UNKNOWN-00013",
+            "expected_token": "453",
+            "predicted_token": "445",
+            "eos_token": "2",
+            "label": "1",
+            "score": "0.943691313",
+            "groups": "62464",
+            "host_ms": "3.324000"
+          }
+        ]
+      },
+      "anchors": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1.0,
+        "eos_correct": 2,
+        "errors": []
+      },
+      "historical": {
+        "total": 240,
+        "correct": 197,
+        "accuracy": 0.8208333333333333,
+        "eos_correct": 240,
+        "errors": [
+          {
+            "id": "legacy-001",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.472696215",
+            "groups": "216064",
+            "host_ms": "20.846000"
+          },
+          {
+            "id": "legacy-002",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998115897",
+            "groups": "158464",
+            "host_ms": "15.583000"
+          },
+          {
+            "id": "legacy-007",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.999082327",
+            "groups": "146944",
+            "host_ms": "8.506000"
+          },
+          {
+            "id": "legacy-012",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "8.066000"
+          },
+          {
+            "id": "legacy-017",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.931576192",
+            "groups": "112384",
+            "host_ms": "6.429000"
+          },
+          {
+            "id": "legacy-030",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.575821996",
+            "groups": "85504",
+            "host_ms": "4.833000"
+          },
+          {
+            "id": "legacy-036",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.633593559",
+            "groups": "216064",
+            "host_ms": "13.038000"
+          },
+          {
+            "id": "legacy-037",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.999335229",
+            "groups": "169984",
+            "host_ms": "9.955000"
+          },
+          {
+            "id": "legacy-042",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998968363",
+            "groups": "146944",
+            "host_ms": "8.573000"
+          },
+          {
+            "id": "legacy-047",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "7.648000"
+          },
+          {
+            "id": "legacy-052",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.931576192",
+            "groups": "112384",
+            "host_ms": "7.148000"
+          },
+          {
+            "id": "legacy-065",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.575821996",
+            "groups": "85504",
+            "host_ms": "5.605000"
+          },
+          {
+            "id": "legacy-071",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.577300727",
+            "groups": "204544",
+            "host_ms": "12.051000"
+          },
+          {
+            "id": "legacy-072",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998115897",
+            "groups": "158464",
+            "host_ms": "8.820000"
+          },
+          {
+            "id": "legacy-077",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998968363",
+            "groups": "146944",
+            "host_ms": "8.508000"
+          },
+          {
+            "id": "legacy-082",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "10.636000"
+          },
+          {
+            "id": "legacy-087",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.925102532",
+            "groups": "112384",
+            "host_ms": "9.117000"
+          },
+          {
+            "id": "legacy-100",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.575821996",
+            "groups": "85504",
+            "host_ms": "4.825000"
+          },
+          {
+            "id": "legacy-106",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.472696215",
+            "groups": "216064",
+            "host_ms": "13.390000"
+          },
+          {
+            "id": "legacy-107",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998847365",
+            "groups": "158464",
+            "host_ms": "9.354000"
+          },
+          {
+            "id": "legacy-112",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998968363",
+            "groups": "146944",
+            "host_ms": "8.664000"
+          },
+          {
+            "id": "legacy-117",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "7.912000"
+          },
+          {
+            "id": "legacy-122",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.931576192",
+            "groups": "112384",
+            "host_ms": "6.388000"
+          },
+          {
+            "id": "legacy-135",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.575821996",
+            "groups": "85504",
+            "host_ms": "4.820000"
+          },
+          {
+            "id": "legacy-141",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.472696215",
+            "groups": "216064",
+            "host_ms": "13.355000"
+          },
+          {
+            "id": "legacy-142",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998847365",
+            "groups": "158464",
+            "host_ms": "9.217000"
+          },
+          {
+            "id": "legacy-146",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.53875041",
+            "groups": "181504",
+            "host_ms": "11.162000"
+          },
+          {
+            "id": "legacy-147",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998968363",
+            "groups": "146944",
+            "host_ms": "9.300000"
+          },
+          {
+            "id": "legacy-152",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "8.026000"
+          },
+          {
+            "id": "legacy-157",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.925102532",
+            "groups": "112384",
+            "host_ms": "6.406000"
+          },
+          {
+            "id": "legacy-170",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.556316257",
+            "groups": "73984",
+            "host_ms": "4.550000"
+          },
+          {
+            "id": "legacy-176",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.633593559",
+            "groups": "216064",
+            "host_ms": "13.127000"
+          },
+          {
+            "id": "legacy-177",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998847365",
+            "groups": "158464",
+            "host_ms": "9.193000"
+          },
+          {
+            "id": "legacy-182",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998968363",
+            "groups": "146944",
+            "host_ms": "8.691000"
+          },
+          {
+            "id": "legacy-186",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.499071538",
+            "groups": "158464",
+            "host_ms": "9.392000"
+          },
+          {
+            "id": "legacy-187",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.975925326",
+            "groups": "135424",
+            "host_ms": "7.752000"
+          },
+          {
+            "id": "legacy-192",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.925102532",
+            "groups": "112384",
+            "host_ms": "6.701000"
+          },
+          {
+            "id": "legacy-205",
+            "expected_token": "447",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.575821996",
+            "groups": "85504",
+            "host_ms": "4.811000"
+          },
+          {
+            "id": "legacy-211",
+            "expected_token": "445",
+            "predicted_token": "457",
+            "eos_token": "2",
+            "label": "2",
+            "score": "0.472696215",
+            "groups": "216064",
+            "host_ms": "13.574000"
+          },
+          {
+            "id": "legacy-212",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.998115897",
+            "groups": "158464",
+            "host_ms": "9.372000"
+          },
+          {
+            "id": "legacy-217",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.999082327",
+            "groups": "146944",
+            "host_ms": "8.586000"
+          },
+          {
+            "id": "legacy-222",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.985932887",
+            "groups": "135424",
+            "host_ms": "7.816000"
+          },
+          {
+            "id": "legacy-227",
+            "expected_token": "457",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.931576192",
+            "groups": "112384",
+            "host_ms": "6.358000"
+          }
+        ],
+        "old_unseen_subset": {
+          "total": 97,
+          "correct": 54
+        }
+      }
+    },
+    "diagnostic_q4": {
+      "test": {
+        "total": 550,
+        "correct": 549,
+        "accuracy": 0.9981818181818182,
+        "eos_correct": 550,
+        "errors": [
+          {
+            "id": "test-PERIOD-00116",
+            "expected_token": "457",
+            "predicted_token": "447",
+            "eos_token": "2",
+            "label": "0",
+            "score": "0.999982715",
+            "groups": "100864",
+            "host_ms": "5.434000"
+          }
+        ],
+        "per_class": {
+          "UNKNOWN": {
+            "total": 100,
+            "correct": 100
+          },
+          "MISSING_PULSE": {
+            "total": 150,
+            "correct": 150
+          },
+          "PERIOD": {
+            "total": 150,
+            "correct": 149
+          },
+          "NORMAL": {
+            "total": 150,
+            "correct": 150
+          }
+        },
+        "three_periodic_classes": {
+          "total": 450,
+          "correct": 449
+        }
+      },
+      "validation": {
+        "total": 550,
+        "correct": 550,
+        "accuracy": 1.0,
+        "eos_correct": 550,
+        "errors": []
+      },
+      "anchors": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 1.0,
+        "eos_correct": 2,
+        "errors": []
+      },
+      "historical": {
+        "total": 240,
+        "correct": 237,
+        "accuracy": 0.9875,
+        "eos_correct": 240,
+        "errors": [
+          {
+            "id": "legacy-031",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.993763626",
+            "groups": "62464",
+            "host_ms": "3.676000"
+          },
+          {
+            "id": "legacy-101",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.993763626",
+            "groups": "62464",
+            "host_ms": "3.362000"
+          },
+          {
+            "id": "legacy-171",
+            "expected_token": "445",
+            "predicted_token": "453",
+            "eos_token": "2",
+            "label": "5",
+            "score": "0.993763626",
+            "groups": "62464",
+            "host_ms": "3.466000"
+          }
+        ],
+        "old_unseen_subset": {
+          "total": 97,
+          "correct": 94
+        }
+      }
+    }
+  },
+  "model_sha256": "b92b1169950003f83feb0e99768917cc53dad483c9c7c22c2d1dbbaa5ccec711",
+  "model_crc32": "b3889358",
+  "limits": [
+    "Synthetic periodic-signal operating domain, not external physical accuracy",
+    "STUCK_HIGH and STUCK_LOW are the only two canonical constant prompts; separately tested, not unseen-class generalization",
+    "Unknown class restricted to insufficient periodic evidence, not arbitrary OOD rejection",
+    "No calibrated confidence or blanket safety certification",
+    "Locked test evaluated after validation-only checkpoint selection; historical test is a regression, not a blind test"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "capture_time": "2026-10-30T18:12:26+08:00",
+  "scope": "r14 CoreMark performance run, real FPGA PDS ILA",
+  "samples": 512,
+  "data_bits": 112,
+  "retire_valid": 512,
+  "firmware_instruction_matches": 512,
+  "mismatches": [],
+  "functions": {
+    "crc16": 482,
+    "core_bench_list": 30
+  },
+  "local_ipc": 1.0,
+  "forward_cycles": 344,
+  "flush_cycles": 0,
+  "waiting_cycles": 0,
+  "cycle_counter_contiguous": true,
+  "vcd_export_timescale_is_not_clock_calibration": true,
+  "elf_sha256": "c967012380dbe829b59bdabbc15b39efd51fbf7683445e0d074aa6fc14de3af2",
+  "vcd_sha256": "d7838bfb114f439fce6e608ace7ca9626e02414ae537b868e441e6a3405605b5",
+  "not_whole_coremark_average": true
+}

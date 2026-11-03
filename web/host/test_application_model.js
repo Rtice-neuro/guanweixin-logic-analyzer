@@ -1,0 +1,11 @@
+const assert = require('node:assert/strict');
+const A = require('./assets/application-model.js');
+assert.deepEqual(A.byte(0x10).bits, [0,0,0,1,0,0,0,0]);
+assert.equal(A.byte(255).hex, 'FF');
+assert.deepEqual(A.channel([0x10,0x00,0x10],4),[1,0,1]);
+assert.equal(A.difference({samples:[0x10,0,0x10]},{samples:[0,0,0]},4),2);
+assert.equal(A.difference({samples:[1]},{samples:[1,2]},0),null);
+const r={status:'PASS',samples:[0,0,1],faults:[{channel:0,code:'STUCK',index:1}]};
+assert.deepEqual(A.channelState(r,0),{text:'电平卡死',fault:true,index:1});
+assert.deepEqual(A.channelState(r,1),{text:'未检出异常',fault:false,index:null});
+console.log('PASS: application model bit order, channel extraction, diff, fault labels');

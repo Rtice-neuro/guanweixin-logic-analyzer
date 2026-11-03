@@ -1,0 +1,1 @@
+#define GWX_MODEL_CRC32 0x2a52a97du

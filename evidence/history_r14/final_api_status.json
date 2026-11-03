@@ -1,0 +1,18 @@
+{
+  "latest": 172,
+  "count": 172,
+  "benchmark_latest": 11,
+  "benchmark_count": 11,
+  "port": "COM8",
+  "connected": true,
+  "ready": true,
+  "pending": false,
+  "error": "",
+  "ai_running": false,
+  "ai_elapsed_seconds": null,
+  "ai_result_id": 36,
+  "external_enabled": false,
+  "phase": "就绪",
+  "ai_count": 36,
+  "last_serial_clock_hz": 27000000
+}

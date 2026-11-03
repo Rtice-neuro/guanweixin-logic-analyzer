@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-30T18:07:47.353159",
+  "sram_configuration_success": true,
+  "flash_written": false,
+  "model_crc32": "2a52a97d",
+  "bitstream": "F:\\FPGA_Work\\gwx_ai_r14\\pds_run\\generate_bitstream\\guanweixin_ai_board_top.sbit",
+  "bitstream_sha256": "a8d0eef6335670cb62318383a640e1aeb71a98f2de5aa8ca676b6ab856c12af6",
+  "pds_console": "COMMAND[configure] execute successfully, takes 2.7 secs.",
+  "gui_tool": "PDS Lite Fabric Debugger via Computer Use"
+}

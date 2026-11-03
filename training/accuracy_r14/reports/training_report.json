@@ -1,0 +1,263 @@
+{
+  "stage": "R14_SELECTED_CHECKPOINT_RECOVERED_AFTER_Q4_EXPORT_IMPORT_ERROR",
+  "best_step": 100,
+  "training_steps": 1200,
+  "selection": "first checkpoint with 10/10 startup regression anchors and 550/550 validation; test not used for selection",
+  "architecture_unchanged": true,
+  "firmware_runtime_unchanged": true,
+  "export_error": "missing struct import; FP32 selected weights had already been exported intact",
+  "test_used_for_selection": false,
+  "validation": {
+    "accuracy": 1.0,
+    "correct": 550,
+    "total": 550,
+    "confusion": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        150,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": []
+  },
+  "anchors": {
+    "accuracy": 1.0,
+    "correct": 10,
+    "total": 10,
+    "confusion": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 0.2,
+    "invalid_outputs": 0,
+    "errors": []
+  },
+  "test": {
+    "accuracy": 0.9981818181818182,
+    "correct": 549,
+    "total": 550,
+    "confusion": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        149,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": [
+      {
+        "id": "r14-unseen-PERIOD-0037",
+        "prompt": "h24 e12 g16,18,14,16,11\nanswer:",
+        "expected": "C",
+        "predicted": "A",
+        "token_id": 447
+      }
+    ]
+  },
+  "q4_sha256": "ce27bf8fbc7e9db9faddf6cc9a8bafa9024a306fb8378681b3c4206afaae3ad6",
+  "model_bytes": 159744
+}

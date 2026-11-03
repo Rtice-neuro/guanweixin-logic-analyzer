@@ -1,0 +1,1 @@
+r13训练与量化资料。旧版数据和权重保存在prior_r12；当前独立复现工程位于accuracy_r13。运行python train_clean.py重新生成固定分组数据并微调，随后运行python validate_c.py用现有WSL GCC编译好的完整C运行时复核。训练脚本通过验证集选检查点；冻结测试550条不用于选择。详见../docs/AI正确率优化记录.md。所有训练与测试均为合成数据。

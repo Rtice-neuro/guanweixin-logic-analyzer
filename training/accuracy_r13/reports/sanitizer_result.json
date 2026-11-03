@@ -1,0 +1,5 @@
+{
+  "pass_all": true,
+  "cases": 40,
+  "scope": "ASan/UBSan fixed held-out sample of complete deployment runtime with candidate weights; not universal safety proof"
+}

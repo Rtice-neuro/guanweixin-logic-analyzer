@@ -1,0 +1,1051 @@
+{
+  "stage": "HOST_TRAINED_Q4_AWAITING_C_VALIDATION",
+  "seed": 3013,
+  "architecture_unchanged": true,
+  "firmware_runtime_unchanged": true,
+  "loss": "Response-only LM loss; six balanced training classes; no rule outputs as model input",
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.25331300497055054,
+      "validation_accuracy": 0.850909090909091,
+      "anchor_accuracy": 1.0,
+      "elapsed": 0.21853809999993246
+    },
+    {
+      "step": 200,
+      "loss": 0.0006621084758080542,
+      "validation_accuracy": 0.9963636363636363,
+      "anchor_accuracy": 1.0,
+      "elapsed": 7.914541999999528
+    },
+    {
+      "step": 400,
+      "loss": 0.000158719762112014,
+      "validation_accuracy": 0.9981818181818182,
+      "anchor_accuracy": 1.0,
+      "elapsed": 15.68697019999945
+    },
+    {
+      "step": 600,
+      "loss": 2.8668198865489103e-05,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 23.56622349999998
+    },
+    {
+      "step": 800,
+      "loss": 1.432841509085847e-05,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 31.43325989999994
+    },
+    {
+      "step": 1000,
+      "loss": 2.895777470257599e-06,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 39.69372569999996
+    },
+    {
+      "step": 1200,
+      "loss": 1.4441671964959824e-06,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 47.61466810000002
+    },
+    {
+      "step": 1400,
+      "loss": 8.468813916806539e-07,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 55.70092999999997
+    },
+    {
+      "step": 1600,
+      "loss": 4.147486833971925e-07,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 63.62765330000002
+    },
+    {
+      "step": 1800,
+      "loss": 2.756713683993439e-07,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 71.63939269999992
+    },
+    {
+      "step": 2000,
+      "loss": 1.67638020798222e-07,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 79.51519269999972
+    },
+    {
+      "step": 2200,
+      "loss": 7.574755755967999e-08,
+      "validation_accuracy": 1.0,
+      "anchor_accuracy": 1.0,
+      "elapsed": 87.37655619999987
+    }
+  ],
+  "test_used_for_selection": false,
+  "validation_before": {
+    "accuracy": 0.8490909090909091,
+    "correct": 467,
+    "total": 550,
+    "confusion": [
+      [
+        143,
+        0,
+        7,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        146,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        150,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        15,
+        52,
+        2,
+        2,
+        28,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": [
+      {
+        "id": "validation-UNKNOWN-00078",
+        "prompt": "h16 e4 g28\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00025",
+        "prompt": "h14 e4 g14\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00052",
+        "prompt": "h14 e4 g28\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00027",
+        "prompt": "h13 e4 g27\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00030",
+        "prompt": "h13 e4 g19\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00041",
+        "prompt": "h14 e4 g38\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00049",
+        "prompt": "h10 e4 g44\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-NORMAL-00087",
+        "prompt": "h34 e8 g17,15,17\nanswer:",
+        "expected": "A",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00040",
+        "prompt": "h6 e4 g57\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00051",
+        "prompt": "h19 e4 g41\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00045",
+        "prompt": "h14 e4 g36\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00063",
+        "prompt": "h12 e4 g37\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00098",
+        "prompt": "h6 e4 g23\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00008",
+        "prompt": "h17 e4 g27\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00089",
+        "prompt": "h16 e4 g48\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00048",
+        "prompt": "h13 e4 g37\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00058",
+        "prompt": "h10 e4 g36\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00061",
+        "prompt": "h6 e4 g52\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-NORMAL-00077",
+        "prompt": "h28 e7 g16,16\nanswer:",
+        "expected": "A",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00084",
+        "prompt": "h13 e4 g14\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00076",
+        "prompt": "h20 e4 g28\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00074",
+        "prompt": "h4 e4 g37\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00003",
+        "prompt": "h11 e4 g63\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-MISSING_PULSE-00032",
+        "prompt": "h40 e18 g16,16,16,16,32,16,16,16\nanswer:",
+        "expected": "B",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00093",
+        "prompt": "h13 e4 g39\nanswer:",
+        "expected": "F",
+        "predicted": "B",
+        "token_id": 445
+      },
+      {
+        "id": "validation-UNKNOWN-00075",
+        "prompt": "h11 e4 g41\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00082",
+        "prompt": "h8 e4 g38\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-NORMAL-00117",
+        "prompt": "h22 e9 g17,15,16\nanswer:",
+        "expected": "A",
+        "predicted": "C",
+        "token_id": 457
+      },
+      {
+        "id": "validation-UNKNOWN-00071",
+        "prompt": "h16 e3 g60\nanswer:",
+        "expected": "F",
+        "predicted": "D",
+        "token_id": 455
+      },
+      {
+        "id": "validation-UNKNOWN-00062",
+        "prompt": "h10 e4 g27\nanswer:",
+        "expected": "F",
+        "predicted": "C",
+        "token_id": 457
+      }
+    ]
+  },
+  "best_anchor": 1.0,
+  "best_step": 600,
+  "validation": {
+    "accuracy": 1.0,
+    "correct": 550,
+    "total": 550,
+    "confusion": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        150,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": []
+  },
+  "test": {
+    "accuracy": 0.9981818181818182,
+    "correct": 549,
+    "total": 550,
+    "confusion": [
+      [
+        150,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        150,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        149,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        100,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": [
+      {
+        "id": "test-PERIOD-00116",
+        "prompt": "h16 e10 g17,16,15,11\nanswer:",
+        "expected": "C",
+        "predicted": "A",
+        "token_id": 447
+      }
+    ]
+  },
+  "anchors": {
+    "accuracy": 1.0,
+    "correct": 2,
+    "total": 2,
+    "confusion": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "columns": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN",
+      "INVALID"
+    ],
+    "rows": [
+      "NORMAL",
+      "MISSING_PULSE",
+      "PERIOD",
+      "STUCK_HIGH",
+      "STUCK_LOW",
+      "UNKNOWN"
+    ],
+    "rule_baseline_accuracy": 1.0,
+    "invalid_outputs": 0,
+    "errors": []
+  },
+  "export": {
+    "quantization": "Q8_0 group64 matmul weights; RMSNorm/RoPE/softmax/SwiGLU stay FP32",
+    "context": 64,
+    "full_integer_inference": false,
+    "original_hidden": 172,
+    "padded_hidden": 192,
+    "padding_preserves_fp32_function": true,
+    "tensors": [
+      {
+        "name": "embedding",
+        "shape": [
+          512,
+          64
+        ],
+        "offset": 3072,
+        "qbytes": 32768,
+        "scale_bytes": 2048,
+        "max_abs_error": 0.004886910319328308
+      },
+      {
+        "name": "layer0.wq",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 37888,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.006186246871948242
+      },
+      {
+        "name": "layer1.wq",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 42240,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.0071336328983306885
+      },
+      {
+        "name": "layer2.wq",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 46592,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.005480974912643433
+      },
+      {
+        "name": "layer3.wq",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 50944,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.007251262664794922
+      },
+      {
+        "name": "layer4.wq",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 55296,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.004881620407104492
+      },
+      {
+        "name": "layer0.wk",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 59648,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.004291415214538574
+      },
+      {
+        "name": "layer1.wk",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 61824,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.004707038402557373
+      },
+      {
+        "name": "layer2.wk",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 64000,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.0037871599197387695
+      },
+      {
+        "name": "layer3.wk",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 66176,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.004529416561126709
+      },
+      {
+        "name": "layer4.wk",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 68352,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.004020363092422485
+      },
+      {
+        "name": "layer0.wv",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 70528,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.0010255128145217896
+      },
+      {
+        "name": "layer1.wv",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 72704,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.0008286610245704651
+      },
+      {
+        "name": "layer2.wv",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 74880,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.0011279433965682983
+      },
+      {
+        "name": "layer3.wv",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 77056,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.001061880961060524
+      },
+      {
+        "name": "layer4.wv",
+        "shape": [
+          32,
+          64
+        ],
+        "offset": 79232,
+        "qbytes": 2048,
+        "scale_bytes": 128,
+        "max_abs_error": 0.0018540583550930023
+      },
+      {
+        "name": "layer0.wo",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 81408,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.002171464264392853
+      },
+      {
+        "name": "layer1.wo",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 85760,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.001340225338935852
+      },
+      {
+        "name": "layer2.wo",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 90112,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.0015341490507125854
+      },
+      {
+        "name": "layer3.wo",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 94464,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.0015175044536590576
+      },
+      {
+        "name": "layer4.wo",
+        "shape": [
+          64,
+          64
+        ],
+        "offset": 98816,
+        "qbytes": 4096,
+        "scale_bytes": 256,
+        "max_abs_error": 0.0024087727069854736
+      },
+      {
+        "name": "layer0.w1",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 103168,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.002618074417114258
+      },
+      {
+        "name": "layer1.w1",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 116224,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0028036683797836304
+      },
+      {
+        "name": "layer2.w1",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 129280,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0023981109261512756
+      },
+      {
+        "name": "layer3.w1",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 142336,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0025914907455444336
+      },
+      {
+        "name": "layer4.w1",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 155392,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.002300456166267395
+      },
+      {
+        "name": "layer0.w2",
+        "shape": [
+          64,
+          192
+        ],
+        "offset": 168448,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0027462244033813477
+      },
+      {
+        "name": "layer1.w2",
+        "shape": [
+          64,
+          192
+        ],
+        "offset": 181504,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0023123323917388916
+      },
+      {
+        "name": "layer2.w2",
+        "shape": [
+          64,
+          192
+        ],
+        "offset": 194560,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0025473982095718384
+      },
+      {
+        "name": "layer3.w2",
+        "shape": [
+          64,
+          192
+        ],
+        "offset": 207616,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0027874112129211426
+      },
+      {
+        "name": "layer4.w2",
+        "shape": [
+          64,
+          192
+        ],
+        "offset": 220672,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.003417402505874634
+      },
+      {
+        "name": "layer0.w3",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 233728,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0021306276321411133
+      },
+      {
+        "name": "layer1.w3",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 246784,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.0019322335720062256
+      },
+      {
+        "name": "layer2.w3",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 259840,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.002149280160665512
+      },
+      {
+        "name": "layer3.w3",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 272896,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.002333343029022217
+      },
+      {
+        "name": "layer4.w3",
+        "shape": [
+          192,
+          64
+        ],
+        "offset": 285952,
+        "qbytes": 12288,
+        "scale_bytes": 768,
+        "max_abs_error": 0.002141416072845459
+      }
+    ],
+    "file_bytes": 299008,
+    "model_sha256": "4ed7bdbe95d514486604e7ba28407e44e4d7d2da78661fd26115ae8344d0fb5c",
+    "fpga_deployed": false
+  },
+  "seconds": 87.72072789999947,
+  "q4_sha256": "b92b1169950003f83feb0e99768917cc53dad483c9c7c22c2d1dbbaa5ccec711",
+  "model_bytes": 159744
+}

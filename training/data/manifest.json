@@ -1,0 +1,19 @@
+{
+  "synthetic_only": true,
+  "train_rows": 3660,
+  "validation_rows": 550,
+  "test_rows": 550,
+  "startup_anchor_cases": 10,
+  "constant_and_startup_anchors_excluded_from_unseen_accuracy": true,
+  "new_test_disjoint_from_all_r13_train_validation_test_and_historical_evaluation": true,
+  "test_frozen_before_training": true,
+  "test_used_for_selection": false,
+  "limits": "Start-settling STUCK classes cover <=4 initial inverse samples followed by >=60 stable samples; trained regression anchors, not independent accuracy samples",
+  "case_files_sha256": {
+    "train": "3e65edf3e6f8a694922b42b68e76ba28777db835c6101e031aac022b16cdb7c0",
+    "validation": "d6b0690cc81e357b824f3a4d0e0723d4a58c7ab70b774eaf9a13ffb73010796f",
+    "test": "e56ae3f4816e50abfc7dad39a3d8cd856c464391dddbcc81691721722b385ea5",
+    "anchors": "bde4b4a9975bfb1c70fb1e96c007297727278c71ef9693645e88c127abfaf49f",
+    "r13_test_regression": "beb3c853765ea53e11d8bc19fd4c6db86cc0d616e622f2f680175631a836a05f"
+  }
+}

@@ -1,0 +1,24 @@
+'use strict';
+const assert=require('node:assert/strict'),M=require('./assets/waveform-model.js');
+const record={config:{divider:270}};
+assert.equal(M.samplePeriod(record),.00001);assert.equal(M.samplePeriod({}),null);
+assert.equal(M.samplePeriod({config:{divider:600},clock_hz:60000000}),.00001);
+assert.equal(M.samplePeriod({config:{divider:600},clock_hz:123}),null);
+assert.equal(M.formatTime(.00001),'10.00 µs');assert.equal(M.formatTime(.000000037),'37.0 ns');
+assert.deepEqual(M.measurement(record,2,10),{samples:8,seconds:.00008,frequency:12499.999999999998});
+assert.equal(M.measurement(record,null,10),null);assert.equal(M.measurement(record,3,3).frequency,null);
+assert.deepEqual(M.zoom({start:0,end:64},.5,64),{start:16,end:48});
+assert.deepEqual(M.zoom({start:16,end:48},10,64),{start:0,end:64});
+assert.deepEqual(M.pan({start:16,end:48},1000,64),{start:32,end:64});
+assert.deepEqual(M.pan({start:16,end:48},-1000,64),{start:0,end:32});
+assert.equal(M.sampleAt(0,960,0,64,64),0);assert.equal(M.sampleAt(960,960,0,64,64),63);
+assert.equal(M.sampleAt(480,960,16,48,64),32);
+const points=M.points([0,1,0],0,0,3,300,100).split(' ').map(p=>p.split(',').map(Number));
+assert.deepEqual(points,[[0,72],[100,72],[100,72],[100,27],[200,27],[200,27],[200,72],[300,72]]);
+for(let start=0;start<60;start++){const v=M.zoom({start,end:Math.min(start+8,64)},.1,64);assert(v.start>=0&&v.end<=64&&v.end-v.start>=4);}
+console.log('PASS waveform timing, step edges, cursor snapping, zoom bounds and pan bounds');
+const sample={samples:[0,1,1,0,0,1,1,0],config:{divider:600},clock_hz:60000000};
+const stats=M.channelStats(sample,0);assert.deepEqual(stats.rising,[1,5]);assert.deepEqual(stats.falling,[3,7]);assert.equal(stats.highRatio,.5);assert.equal(stats.meanPeriodSamples,4);assert(Math.abs(stats.frequency-25000)<1e-8);
+assert.equal(M.channelStats({...sample,samples:[1,1,1]},0).frequency,null);assert.equal(M.channelStats({},0).highRatio,null);
+assert.equal(M.nextEdge(stats.edges,3,1),5);assert.equal(M.nextEdge(stats.edges,3,-1),1);assert.equal(M.nextEdge(stats.edges,7,1),null);
+console.log('PASS per-channel edge statistics, sampled-high ratio, frequency and bounded edge navigation');

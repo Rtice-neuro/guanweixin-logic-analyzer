@@ -1,0 +1,7 @@
+{
+  "top_level_ports_unchanged": true,
+  "physical_constraints_unchanged": true,
+  "old_top": "F:\\FPGA_Work\\gwx_uart_r18_hold\\inputs\\guanweixin_ai_board_top.v",
+  "new_top": "F:\\FPGA_Work\\gwx_uart_r20_probe\\inputs\\guanweixin_ai_board_top.v",
+  "hardware_programmed": false
+}

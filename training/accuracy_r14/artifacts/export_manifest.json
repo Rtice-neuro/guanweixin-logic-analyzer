@@ -1,0 +1,409 @@
+{
+  "quantization": "Q8_0 group64 matmul weights; RMSNorm/RoPE/softmax/SwiGLU stay FP32",
+  "context": 64,
+  "full_integer_inference": false,
+  "original_hidden": 172,
+  "padded_hidden": 192,
+  "padding_preserves_fp32_function": true,
+  "tensors": [
+    {
+      "name": "embedding",
+      "shape": [
+        512,
+        64
+      ],
+      "offset": 3072,
+      "qbytes": 32768,
+      "scale_bytes": 2048,
+      "max_abs_error": 0.0049222372472286224
+    },
+    {
+      "name": "layer0.wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 37888,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.006072521209716797
+    },
+    {
+      "name": "layer1.wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 42240,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.007177025079727173
+    },
+    {
+      "name": "layer2.wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 46592,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.005486965179443359
+    },
+    {
+      "name": "layer3.wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 50944,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.007287453860044479
+    },
+    {
+      "name": "layer4.wq",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 55296,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.004926525056362152
+    },
+    {
+      "name": "layer0.wk",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 59648,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.004250317811965942
+    },
+    {
+      "name": "layer1.wk",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 61824,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.004733264446258545
+    },
+    {
+      "name": "layer2.wk",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 64000,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.003787938505411148
+    },
+    {
+      "name": "layer3.wk",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 66176,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.004582762718200684
+    },
+    {
+      "name": "layer4.wk",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 68352,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.004089727997779846
+    },
+    {
+      "name": "layer0.wv",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 70528,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.0010521821677684784
+    },
+    {
+      "name": "layer1.wv",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 72704,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.0008451156318187714
+    },
+    {
+      "name": "layer2.wv",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 74880,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.0011321255005896091
+    },
+    {
+      "name": "layer3.wv",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 77056,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.0010774238035082817
+    },
+    {
+      "name": "layer4.wv",
+      "shape": [
+        32,
+        64
+      ],
+      "offset": 79232,
+      "qbytes": 2048,
+      "scale_bytes": 128,
+      "max_abs_error": 0.0018449872732162476
+    },
+    {
+      "name": "layer0.wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 81408,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.0021752193570137024
+    },
+    {
+      "name": "layer1.wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 85760,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.0012736497446894646
+    },
+    {
+      "name": "layer2.wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 90112,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.001514732837677002
+    },
+    {
+      "name": "layer3.wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 94464,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.0015390515327453613
+    },
+    {
+      "name": "layer4.wo",
+      "shape": [
+        64,
+        64
+      ],
+      "offset": 98816,
+      "qbytes": 4096,
+      "scale_bytes": 256,
+      "max_abs_error": 0.0024253129959106445
+    },
+    {
+      "name": "layer0.w1",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 103168,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0026590824127197266
+    },
+    {
+      "name": "layer1.w1",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 116224,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.002811431884765625
+    },
+    {
+      "name": "layer2.w1",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 129280,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.00242769718170166
+    },
+    {
+      "name": "layer3.w1",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 142336,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.002524048089981079
+    },
+    {
+      "name": "layer4.w1",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 155392,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0023377537727355957
+    },
+    {
+      "name": "layer0.w2",
+      "shape": [
+        64,
+        192
+      ],
+      "offset": 168448,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0027751624584198
+    },
+    {
+      "name": "layer1.w2",
+      "shape": [
+        64,
+        192
+      ],
+      "offset": 181504,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0023279450833797455
+    },
+    {
+      "name": "layer2.w2",
+      "shape": [
+        64,
+        192
+      ],
+      "offset": 194560,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0024134963750839233
+    },
+    {
+      "name": "layer3.w2",
+      "shape": [
+        64,
+        192
+      ],
+      "offset": 207616,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0026659443974494934
+    },
+    {
+      "name": "layer4.w2",
+      "shape": [
+        64,
+        192
+      ],
+      "offset": 220672,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0033968091011047363
+    },
+    {
+      "name": "layer0.w3",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 233728,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0021480917930603027
+    },
+    {
+      "name": "layer1.w3",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 246784,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0019240453839302063
+    },
+    {
+      "name": "layer2.w3",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 259840,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0021746978163719177
+    },
+    {
+      "name": "layer3.w3",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 272896,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0023700594902038574
+    },
+    {
+      "name": "layer4.w3",
+      "shape": [
+        192,
+        64
+      ],
+      "offset": 285952,
+      "qbytes": 12288,
+      "scale_bytes": 768,
+      "max_abs_error": 0.0021323845721781254
+    }
+  ],
+  "file_bytes": 299008,
+  "model_sha256": "c5883c948e78d099d3fff72d6165ec1d8db3648257d5f2a5a6d322356c469dd2",
+  "fpga_deployed": false
+}
